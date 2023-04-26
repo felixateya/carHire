@@ -25,7 +25,7 @@ body {
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  padding: 15px;
+  padding: 5px;
   position: fixed;
   z-index: 100;
 }
@@ -175,6 +175,7 @@ select {
   background-color: #01321d;
   flex-wrap: wrap;
   padding-left: 20px;
+  padding-bottom: 10px;
 }
 
 .like h1 {
