@@ -135,5 +135,5 @@ document.getElementById("forget").onclick = function () {
 };
 
 document.getElementById("create").onclick = function () {
-  window.location.href = "/index.html";
+  window.location.href = "/register.html";
 };

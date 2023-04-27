@@ -176,17 +176,18 @@ h1 {
   padding-bottom: 5px;
 }
 
-h4 a {
+#create a {
   color: #0b526e;
   cursor: pointer;
   font-weight: 600;
   text-decoration: none;
 }
 
-h4 {
+#create {
   color: #fff;
   padding-top: 10px;
   padding-bottom: 10px;
+  cursor: pointer;
 }
 
 #facebook, #twitter {

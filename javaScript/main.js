@@ -1,12 +1,3 @@
-function changeBackground() {
-  var myDiv = document.getElementById("myDiv");
-  if (window.scrollY > 0) {
-    myDiv.classList.add("change-background");
-  } else {
-    myDiv.classList.remove("change-background");
-  }
-}
-
 const D = new Date();
 
 firebase.auth().onAuthStateChanged((user) => {
@@ -46,7 +37,15 @@ firebase.auth().onAuthStateChanged((user) => {
   }
 });
 
-// document.getElementById("book").onclick 
-// {
-//   window.location.href = "/cars.html";
-// }
+document.getElementById("book").onclick = function () {
+  window.location.href = "/cars.html";
+};
+
+function changeBackground() {
+  var myDiv = document.getElementById("myDiv");
+  if (window.scrollY > 0) {
+    myDiv.classList.add("change-background");
+  } else {
+    myDiv.classList.remove("change-background");
+  }
+}

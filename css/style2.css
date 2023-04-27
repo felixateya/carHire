@@ -9,9 +9,10 @@ body {
 }
 
 .home {
-  background: url(/images/cadilac.webp);
+  background: url(/images/urus.jpg);
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
   width: 100%;
   height: 100vh;
   display: flex;
@@ -170,12 +171,16 @@ select {
   margin-bottom: 5px;
 }
 
+/* .carousel-item {
+  height: 60vh;
+} */
+
 .like {
   width: 100%;
   background-color: #01321d;
   flex-wrap: wrap;
   padding-left: 20px;
-  padding-bottom: 10px;
+  padding-bottom: 2px;
 }
 
 .like h1 {
@@ -193,6 +198,8 @@ select {
 }
 #here {
   color: #7df88d;
+  padding-top: 10px;
+  font-size: 14px;
   font-weight: 500;
   text-transform: capitalize;
 }
@@ -319,7 +326,6 @@ select {
 @media (max-width: 1156px) {
   .home {
     width: 100%;
-    height: 50vh;
   }
   .mine p {
     color: #01321d;
@@ -330,7 +336,6 @@ select {
 
   .search {
     width: 100%;
-    height: 60vh;
   }
   .form {
     width: 80%;
@@ -338,6 +343,10 @@ select {
 }
 
 @media (max-width: 1024px) {
+  
+  .logo {
+    left: 10px;
+  }
   .menu {
     width: 100%;
     max-height: 0;
@@ -348,9 +357,11 @@ select {
     flex-direction: column;
     align-items: center;
     padding: 20px;
+    background-color: #7a7a7a;
+    border: 1px solid #565656;
   }
 
-  .navbar label {
+  .navbar1 label {
     display: inline-flex;
     align-items: center;
     cursor: pointer;
@@ -378,15 +389,20 @@ select {
 
   .like {
     display: flex;
+    flex-direction: column;
     /* height: 100vh; */
-    padding-left: 10px;
+    padding-left: 5px;
   }
 
   .like h4 {
-    font-size: 22px;
-    text-align: left;
-    color: #7a7a7a;
+    font-size: 16px;
+    text-align: center;
+    color: #73b0cd;
   }
+#here {
+  text-align: center;
+}
+  
 
   .top {
     flex-wrap: wrap;
