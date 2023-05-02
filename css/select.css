@@ -3,18 +3,18 @@
   margin: 0;
 }
 
-body {
-  background-color: #7a7a7a;
-}
+
 
 .navbar {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  z-index: 100;
   justify-content: space-between;
-  background-color: #7a7a7a;
+  background-color: transparent;
   width: 99%;
   padding-top: 10px;
+  padding-bottom: 10px;
   padding-right: 20px;
   height: 3vh;
   position: fixed;
@@ -22,13 +22,14 @@ body {
 }
 
 .navbar.change-background {
-  background-color: #216953 ;
+  background-color: #216953;
   color: #fff;
 }
 
 .navbar a {
   text-decoration: none;
-  color: inherit;
+  color: #fff;
+  font-weight: 600;
 }
 
 .logo {
@@ -46,8 +47,11 @@ body {
   display: none;
 }
 
+
 .eve {
   position: relative;
+  height: auto;
+  background-color: #222;
 }
 
 .eve h1 {
@@ -60,17 +64,19 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #7a7a7a;
+  background-color: #222;
   flex-wrap: wrap;
+  position: relative;
+  /* animation-delay: 500ms; */
 }
 
 .car {
-  width: 50%;
+  width: 30%;
   display: flex;
+  position: relative;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-color: #7a7a7a;
   color: #7df88d;
 }
 
@@ -84,8 +90,18 @@ body {
 .car img {
   width: 70%;
   height: 80%;
+  border-radius: 10px;
+  border: 3px solid #555;
+  animation-duration: 10s;
+  animation-timing-function: ease-in-out;
 }
 
+.car img:hover {
+  
+  border: 3px solid #7df88d;
+  transform: translate(25px, 0px);
+  
+}
 .car h4 {
   padding: 10px 0;
   cursor: pointer;
@@ -127,6 +143,8 @@ body {
   #toggler:checked ~ .menu {
     max-height: max-content;
   }
+
+
 
   .select {
     flex-wrap: wrap;
