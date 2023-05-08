@@ -21,7 +21,10 @@
   filter: blur(20px);
   position: relative;
 }
-
+.logo img {
+  width: 70px;
+  height: 50px;
+}
 .fire {
   top: 10px;
   left: 10%;

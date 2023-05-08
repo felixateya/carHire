@@ -16,7 +16,7 @@
   padding-top: 10px;
   padding-bottom: 10px;
   padding-right: 20px;
-  height: 3vh;
+  height: 6vh;
   position: fixed;
   font-family: "Dancing Script", cursive;
 }
@@ -33,7 +33,13 @@
 }
 
 .logo {
-  margin-right: 200px;
+  /* margin-right: 200px; */
+  font-family: 'Secular One', sans-serif;
+}
+
+.logo img {
+  width: 70px;
+  height: 50px;
 }
 
 .list {
@@ -99,9 +105,16 @@
 .car img:hover {
   
   border: 3px solid #7df88d;
-  transform: translate(25px, 0px);
-  
+  transform: translate(25px, 4px);  
 }
+
+.animate__backInLeft{
+  animation-delay: 0.75s;
+}
+.animate__backInUp {
+  animation-delay: 1s;
+}
+
 .car h4 {
   padding: 10px 0;
   cursor: pointer;
