@@ -12,10 +12,7 @@
   z-index: 100;
   justify-content: space-between;
   background-color: transparent;
-  width: 99%;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-right: 20px;
+  width: 100%;
   height: 6vh;
   position: fixed;
   font-family: "Dancing Script", cursive;
@@ -125,12 +122,13 @@
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: space-evenly;
-    height: 3vh;
+    justify-content: space-between;
+    height: 7vh;
+    background-color: #7a7a7a;
   }
 
   .logo {
-    left: 10px;
+  margin-right: 100px;
   }
   .menu {
     width: 100%;
@@ -147,10 +145,12 @@
   }
 
   .navbar label {
+    padding-right: 10px;
     display: inline-flex;
     align-items: center;
     cursor: pointer;
-    color: #01321d;
+    color: #fff;
+    font-weight: 600;
   }
 
   #toggler:checked ~ .menu {
