@@ -1,3 +1,42 @@
+firebase.auth().onAuthStateChanged((user) => {
+  if (user) {
+    var uid = user.uid;
+    console.log(uid);
+
+    var userEmail = user.email;
+    console.log(userEmail);
+
+    firebase
+      .firestore()
+      .collection("Users")
+      .doc(uid)
+      .get()
+      .then((doc) => {
+        let userName = doc.data().userName;
+        let userEmail = doc.data().emailAddress;
+        // document.getElementById("userName").innerText =
+        //   "Welcome" + " " + userName;
+        // document.getElementById("email").innerText = userEmail;
+      });
+    // document.getElementById("logOut").onclick = function () {
+    //   firebase
+    //     .auth()
+    //     .signOut()
+    //     .then(() => {
+    //       // Sign-out successful.
+    //       window.location.href = "/login.html";
+    //     })
+    //     .catch((error) => {
+    //       // An error happened.
+    //     });
+    // };
+  } else {
+    window.location.href = "/index.html";
+  }
+});
+
+
+
 var Jeep = {
   car: "/images/jeep.jpg",
   name: "2023 Jeep Compass",
@@ -73,41 +112,32 @@ document.getElementById("car7").src = Porsche.car;
 document.getElementById("name7").innerText = Porsche.name;
 document.getElementById("price7").innerText = Porsche.price;
 
-var selectId = decodeURIComponent(window.location.search);
+document.getElementById("carOne").onclick = function () {
+  window.location.href = "/home.html" + "?" + Jeep.itemId;
+};
 
-var selectedItem = selectId.substring(1);
+document.getElementById("carTwo").onclick = function () {
+  window.location.href = "/home.html" + "?" + Lexus.itemId;
+};
 
-console.log(selectedItem);
+document.getElementById("carThree").onclick = function () {
+  window.location.href = "/home.html" + "?" + RangeRover.itemId;
+};
 
-if (selectedItem == Jeep.itemId) {
-  document.getElementById("car").src = Jeep.car;
-  document.getElementById("name").innerText = Jeep.name;
-  document.getElementById("price").innerText = Jeep.price;
-} else if (selectedItem == Lexus.itemId) {
-  document.getElementById("car").src = Lexus.car;
-  document.getElementById("name").innerText = Lexus.name;
-  document.getElementById("price").innerText = Lexus.price;
-} else if (selectedItem == RangeRover.itemId) {
-  document.getElementById("car").src = RangeRover.car;
-  document.getElementById("name").innerText = RangeRover.name;
-  document.getElementById("price").innerText = RangeRover.price;
-} else if (selectedItem == Escalade.itemId) {
-  document.getElementById("car").src = Escalade.car;
-  document.getElementById("name").innerText = Escalade.name;
-  document.getElementById("price").innerText = Escalade.price;
-} else if (selectedItem == Mercedes.itemId) {
-  document.getElementById("car").src = Mercedes.car;
-  document.getElementById("name").innerText = Mercedes.name;
-  document.getElementById("price").innerText = Mercedes.price;
-} else if (selectedItem == Urus.itemId) {
-  document.getElementById("car").src = Urus.car;
-  document.getElementById("name").innerText = Urus.name;
-  document.getElementById("price").innerText = Urus.price;
-} else if (selectedItem == Porsche.itemId) {
-  document.getElementById("car").src = Porsche.car;
-  document.getElementById("name").innerText = Porsche.name;
-  document.getElementById("price").innerText = Porsche.price;
-}
+document.getElementById("carFour").onclick = function () {
+  window.location.href = "/home.html" + "?" + Escalade.itemId;
+};
+
+document.getElementById("carFive").onclick = function () {
+  window.location.href = "/home.html" + "?" + Mercedes.itemId;
+};
+
+document.getElementById("carSix").onclick = function () {
+  window.location.href = "/home.html" + "?" + Urus.itemId;
+};
+document.getElementById("carSeven").onclick = function () {
+  window.location.href = "/home.html" + "?" + Porsche.itemId;
+};
 
 
 

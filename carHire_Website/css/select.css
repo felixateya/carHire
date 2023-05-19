@@ -3,38 +3,40 @@
   margin: 0;
 }
 
-body {
-  background-color: #7a7a7a;
-}
+
 
 .navbar {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  z-index: 100;
   justify-content: space-between;
-  background-color: #7a7a7a;
-  width: 99%;
-  padding-top: 10px;
-  padding-bottom : 10px;
-  padding-right: 20px;
-  height: 3vh;
+  background-color: transparent;
+  width: 100%;
+  height: 6vh;
   position: fixed;
   font-family: "Dancing Script", cursive;
 }
 
 .navbar.change-background {
-  background-color: #216953 ;
+  background-color: #216953;
   color: #fff;
 }
 
 .navbar a {
   text-decoration: none;
-  color: inherit;
+  color: #fff;
   font-weight: 600;
 }
 
 .logo {
-  margin-right: 200px;
+  /* margin-right: 200px; */
+  font-family: 'Secular One', sans-serif;
+}
+
+.logo img {
+  width: 70px;
+  height: 50px;
 }
 
 .list {
@@ -49,15 +51,10 @@ body {
 }
 
 
-video {
-  position:fixed;
-}
-source {
-  position: absolute;
-  object-fit: cover;
-}
 .eve {
   position: relative;
+  height: auto;
+  background-color: #222;
 }
 
 .eve h1 {
@@ -70,18 +67,19 @@ source {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* background-color: #7a7a7a; */
+  background-color: #222;
   flex-wrap: wrap;
   position: relative;
+  /* animation-delay: 500ms; */
 }
 
 .car {
   width: 30%;
   display: flex;
+  position: relative;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  /* background-color: #7a7a7a; */
   color: #7df88d;
 }
 
@@ -95,6 +93,23 @@ source {
 .car img {
   width: 70%;
   height: 80%;
+  border-radius: 10px;
+  border: 3px solid #555;
+  animation-duration: 10s;
+  animation-timing-function: ease-in-out;
+}
+
+.car img:hover {
+  
+  border: 3px solid #7df88d;
+  transform: translate(25px, 4px);  
+}
+
+.animate__backInLeft{
+  animation-delay: 0.75s;
+}
+.animate__backInUp {
+  animation-delay: 1s;
 }
 
 .car h4 {
@@ -107,12 +122,13 @@ source {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: space-evenly;
-    height: 3vh;
+    justify-content: space-between;
+    height: 7vh;
+    background-color: #7a7a7a;
   }
 
   .logo {
-    left: 10px;
+  margin-right: 100px;
   }
   .menu {
     width: 100%;
@@ -129,15 +145,19 @@ source {
   }
 
   .navbar label {
+    padding-right: 10px;
     display: inline-flex;
     align-items: center;
     cursor: pointer;
-    color: #01321d;
+    color: #fff;
+    font-weight: 600;
   }
 
   #toggler:checked ~ .menu {
     max-height: max-content;
   }
+
+
 
   .select {
     flex-wrap: wrap;

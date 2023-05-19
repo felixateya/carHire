@@ -10,22 +10,19 @@ body {
 
 .home {
   width: 100%;
-  height: 100vh;
   display: flex;
+  background-color: #01321d;
   flex-direction: column;
   position: relative;
 }
 
-.home video {
-  padding-bottom: 56.25%;
-  position: fixed;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
+
+.logo {
+  font-family: 'Secular One', sans-serif;
 }
-source {
-  position: absolute;
+.logo img {
+  width: 70px;
+  height: 50px;
 }
 
 .navbar1 {
@@ -37,10 +34,12 @@ source {
   padding: 5px;
   position: fixed;
   z-index: 100;
+  
 }
 .navbar1.change-background {
   background-color: #01321d;
   color: #fff;
+  border-bottom: 1px dotted #fff ;
 }
 
 .navbar1 a {
@@ -67,6 +66,7 @@ source {
 .mine {
   width: 100%;
   height: 80%;
+  padding: 10% 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -82,7 +82,7 @@ source {
 
 .mine p {
   font-size: 16px;
-  text-align: center;
+  text-align: justify;
   width: 70%;
   color: #f5f5f5;
   padding-top: 20px;
@@ -105,15 +105,16 @@ source {
   color: #f5f5f5;
   font-weight: 600;
 }
-
+/* *::-webkit-scrollbar{
+  display: none;
+} */
 .search {
   width: 100%;
-  height: 100vh;
   background: url(/images/wagon.avif);
+  object-fit: fill;
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
-  position: relative;
   flex-direction: column;
 }
 
@@ -121,7 +122,6 @@ source {
   font-size: 36px;
   text-align: center;
   color: #f5f5f5;
-  margin-top: 10px;
   margin-bottom: 10px;
   text-shadow: 5px 5px 2px grey;
 }
@@ -190,7 +190,6 @@ select {
   flex-wrap: wrap;
   padding-left: 20px;
   padding-bottom: 2px;
-  position: relative;
 }
 
 .like h1 {
@@ -228,7 +227,9 @@ select {
 .top p {
   color: #f5f5f5;
   width: 80%;
-  text-transform: lowercase;
+  text-align: justify;
+  line-height: 18px;
+  text-transform: initial;
 }
 .bottom {
   width: 100%;
@@ -236,9 +237,11 @@ select {
   display: flex;
 }
 .bottom p {
+  line-height: 18px;
   color: #f5f5f5;
   width: 80%;
-  text-transform: lowercase;
+  text-align: justify;
+  text-transform: initial;
 }
 
 .best,
@@ -259,7 +262,7 @@ select {
   background-color: #01321d;
   display: flex;
   flex-direction: column;
-  position: relative;
+  
 }
 
 .all1 {
@@ -306,6 +309,7 @@ select {
   color: #7df88d;
   width: max-content;
 }
+
 .us {
   display: flex;
   flex-direction: column;
@@ -337,7 +341,15 @@ select {
 @media (max-width: 1156px) {
   .home {
     width: 100%;
+    height: 677px;
+    background: url(/images/urus.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
   }
+
+  .home video {
+  display: none;
+}
 
   .mine h1 {
     font-size: 35px;
@@ -345,6 +357,10 @@ select {
 
   .search {
     width: 100%;
+    background: url(/images/wag2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:center;
   }
   .form {
     width: 80%;
@@ -352,14 +368,33 @@ select {
 }
 
 @media (max-width: 1023px) {
-  .logo {
-    left: 10px;
-  }
+  
   .menu {
     width: 100%;
     max-height: 0;
     overflow: hidden;
   }
+
+  .home {
+    width: 100%;
+    height: 912px;
+    background: url(/images/rez.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:center;
+  }
+  .search {
+    width: 100%;
+    height: max-content;
+    background: url(/images/wag2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:center;
+  }
+
+  .home video {
+  display: none;
+}
   .list {
     display: flex;
     flex-direction: column;
