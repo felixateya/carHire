@@ -111,6 +111,7 @@ body {
 .search {
   width: 100%;
   background: url(/images/wagon.avif);
+  object-fit: fill;
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
@@ -308,6 +309,7 @@ select {
   color: #7df88d;
   width: max-content;
 }
+
 .us {
   display: flex;
   flex-direction: column;
