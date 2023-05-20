@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> The Concept </title>
+  <link rel="stylesheet" href="/css/style2.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://use.fontawesome.com/28f229e3ea.js"></script>
+  <script src="https://kit.fontawesome.com/d6f91ed192.js" crossorigin="anonymous"></script>
+</head>
+<!-- uicolors.app -->
+
+<body onscroll="changeBackground()">
+  <section class="home" id="home">
+    
+    <nav class="navbar1" id="myDiv">
+      <a href="/Concept.html" class="logo"> <img  src="/images/light.png" alt=""> CONCEPT</a>
+      <input type="checkbox" id="toggler">
+      <label for="toggler"><i class="fa fa-bars" aria-hidden="true"></i></label>
+      <div class="menu">
+        <ul class="list">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#like">About</a></li>
+          <li><a href="#footer">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div class="mine animate__animated animate__backInRight" id="mine">
+      <h1>#1 Car rental service in the country</h1>
+      <p> <span>Concept</span> is a car hire company that provides a wide range of vehicles for short-term and long-term
+        rentals. They
+        offer high-quality, reliable and well-maintained cars, including economy, luxury, SUVs, and vans. Concept's rental
+        services are available in various locations, making it convenient for customers to rent a car for business or leisure
+        travel. The company also provides flexible rental options, including daily, weekly and monthly rentals, with
+        competitive pricing and exceptional customer service. Concept aims to provide customers with a hassle-free car rental
+        experience, offering convenient online booking and a user-friendly mobile app for easy reservations and pick-up.
+      </p>
+      <button class="fa-beat-fade" id="book">Book Now</button>
+    </div>
+  </section>
+  <section class="search" id="search">
+    <h1>Search & Hire Cars</h1>
+    <div class="form">
+      <select name="" id="pick">
+        <option value="Select Your Car">Select </option>
+        <option value="2023 Jeep Compass">2023 Jeep Compass</option>
+        <option value="2023 Lexus GX"> 2023 Lexus GX</option>
+        <option value="Range Rover 2023">Range Rover 2023</option>
+        <option value="Cadillac Escalade 2023 Sports Edition">Cadillac Escalade 2023 Sports Edition</option>
+        <option value="Mercedes G-Wagon">Mercedes G-Wagon</option>
+        <option value="Lamborghini Urus Performante">Lamborghini Urus Performante</option>
+        <option value="Porsche Cayenne"> Porsche Cayene</option>
+      </select>
+      <label for=""><i class="fa fa-map-marker" aria-hidden="true"></i> Pickup location</label>
+      <input type="location">
+      <label for=""><i class="fa fa-map-marker" aria-hidden="true"></i> Drop location</label>
+      <input type="text">
+      <input type="date">
+      <input type="time">
+      <input type="date">
+      <input type="time">
+      <button id="select">Reserve Your Car</button>
+    </div>
+    <h1>Most Popular Cars</h1>
+  </section>
+
+  <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel" data-bs-interval="10000"
+    data-bs-pause="true">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+        aria-label="Slide 4"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4"
+        aria-label="Slide 5"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5"
+        aria-label="Slide 6"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="6"
+        aria-label="Slide 7"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="/images/escalade.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5 style="color:#222; font-weight:800">Cadillac Escalade 2023</h5>
+          <p style="color:#222; font-weight:800">Luxe interior, high-tech features abound, the debut of the hot-rod
+            V-series variant.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="/images/range.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5 style="color:silver; font-weight:700">Range Rover 2023 SUV</h5>
+          <p style="color:silver; font-weight:700">Handsome exterior design, high-end interior finishes, agreeable mix
+            of comfort and sport.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="/images/jeep.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5 style="color:rgb(219, 31, 31); font-weight:700">2023 Jeep Compass</h5>
+          <p style="color:rgb(219, 31, 31); font-weight:700" ;>Good offering of modern tech, Trailhawk off-road model
+            is
+            more than just a name, standard all-wheel drive.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="/images/AMG.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5 style="color:green; font-weight:700">2023 Mercedes-AMG G63</h5>
+          <p style="color:green; font-weight:700"> A box-shaped rocket ship, boosted performance doesn't compromise
+            off-road prowess, a millionaire's Jeep.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="/images/lexus.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5 style="color:#222; font-weight:800">2023 Lexus GX</h5>
+          <p style="color:#222; font-weight:800">Off-roading moxie, well-appointed cabin space, feature-rich base
+            model.
+          </p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="/images/cayenne.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5 style="font-weight:700">Porsche Cayenne</h5>
+          <p style="font-weight:700">Zesty powertrains, terrific driving traits for an SUV, rated to tow up to 7700
+            pounds.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="/images/urus.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5 style="font-weight:700; color: rgb(177, 177, 14)">2023 Lamborghini Urus</h5>
+          <p style="font-weight:700; color: rgb(177, 177, 14)">A Lambo that can tow and carry two-plus people,
+            incredible performance is standard, new Performante model is tangibly
+            racier.</p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <section class="like" id="like">
+    <div class="all">
+      <h1>Why People like us</h1>
+      <p id="here">Here are the reasons why we are the best in this Car Rental Field:</p>
+      <div class="top">
+        <div class="best">
+          <h4><i class="fa fa-check" aria-hidden="true"></i> Best Price Guarantee</h4>
+          <p>Choosing Concept  would be a smart choice due to our best price guarantee, which ensures  you receive the best possible rates on our rental vehicles.</p>
+
+        </div>
+        <div class="fees">
+          <h4><i class="fa fa-check" aria-hidden="true"></i> No Cancellation Fees</h4>
+          <p>no cancellation fees policy gives you the flexibility to make changes to your rental bookings without incurring additional charges, making it a great choice for anyone who values convenience and peace of mind.</p>
+
+        </div>
+        <div class="quality">
+          <h4><i class="fa fa-check" aria-hidden="true"></i> Best Quality Cars</h4>
+          <p>Concept's commitment to providing you with the best quality cars ensures that you as renters have access to reliable and well-maintained vehicles, making it a top choice for anyone who values safety and comfort on the road.</p>
+        </div>
+        <div class="any">
+          <h4><i class="fa fa-check" aria-hidden="true"></i> Reservation Anytime</h4>
+          <p>Concept's 24/7 reservation system allows  as a customer to book your rentals anytime, anywhere, making it a convenient option for busy travelers who need flexibility when it comes to making their rental arrangements.</p>
+        </div>
+      </div>
+      <div class="bottom">
+        <div class="miles">
+          <h4><i class="fa fa-check" aria-hidden="true"></i> Personal Driver</h4>
+          <p>Concept's personal driver service provides you with a stress-free and luxurious travel experience, making it a great choice for those who want to sit back, relax, and enjoy the ride.</p>
+        </div>
+        <div class="fees">
+          <h4><i class="fa fa-check" aria-hidden="true"></i> Unlimited Miles</h4>
+          <p>Concept's unlimited miles policy allows you to drive as far as you need without worrying about incurring additional fees, making it an excellent option for anyone planning a long road trip or exploring a new destination.</p>
+        </div>
+        <div class="city">
+          <h4><i class="fa fa-check" aria-hidden="true"></i> City to City</h4>
+          <p>Concept's city to city service provides you with the convenience of dropping off your rental car at a different location from where you picked it up, making it an ideal choice for anyone who needs to travel between cities without worrying about transportation logistics.</p>
+        </div>
+        <div class="customer">
+          <h4><i class="fa fa-check" aria-hidden="true"></i> 24/7 Customer Support</h4>
+          <p>Concept's 24/7 customer support ensures that renters have access to assistance at any time, making it a reliable choice for anyone who values excellent customer service and support.</p>
+        </div>
+      </div>
+    </div>
+    <h1> Cars by Type</h1>
+    <h5 id="here">Here are some of the car types we offer to our clients: </h5>
+  </section>
+  <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel" data-bs-interval="6000"
+    data-bs-pause="true">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+        aria-label="Slide 4"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4"
+        aria-label="Slide 5"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="/images/sedan.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Sedan</h5>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="/images/roadster.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Roadster</h5>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="/images/coupe.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Coupe</h5>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="/images/station wagon.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Station Wagon</h5>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="/images/range White.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>SUV</h5>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <section class="footer" id="footer">
+    <div class="all1">
+      <div class="about">
+        <h3>About Us</h3>
+        <h2>Concept</h2>
+        <p>Concept is a car hire company that provides a wide range of vehicles for short-term and long-term rentals. They offer
+        high-quality, reliable and well-maintained cars, including economy, luxury, SUVs, and vans.</p>
+        <div class="font">
+          <i class="fa-brands fa-facebook fa-beat-fade" aria-hidden="true"></i>
+          <i class="fa fa-twitter fa-beat-fade" aria-hidden="true"></i>
+          <i class="fa fa-instagram fa-beat-fade" aria-hidden="true"></i>
+          <i class="fa fa-linkedin fa-beat-fade" aria-hidden="true"></i>
+        </div>
+      </div>
+      <div class="link">
+        <h3>Quick Links</h3>
+        <a href="">About Us</a>
+        <a href="">Contact Us</a>
+        <a href="https://lustrous-profiterole-be6a6b.netlify.app/cars.html" id="cars">Cars</a>
+        <a href="">Site Map</a>
+        <a href="">Get a Receipt</a>
+      </div>
+      <div class="us">
+        <h3>Contact Us</h3>
+        <p>Phone Number: <span>+254746886189</span></p>
+        <p>Email Address: <a href="">mulaafelix6@gmail.com</a></p>
+      </div>
+    </div>
+    <div class="copyright">
+      <p >Copyright <i class="fa fa-copyright" aria-hidden="true"></i>Concept 2023. All rights reserved.</p>
+      <div class="accept">
+        <p>We accept</p>
+        <div class="pay">
+          <i class="fa fa-cc-paypal" aria-hidden="true"></i>
+          <i class="fa fa-cc-visa" aria-hidden="true"></i>
+          <i class="fa fa-cc-mastercard" aria-hidden="true"></i>
+        </div>
+      </div>
+
+  </section>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-analytics.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-firestore.js"></script>
+  <script src="/javaScript/config.js"></script>
+  <script src="/javaScript/main.js"></script>
+</body>
+
+</html>
