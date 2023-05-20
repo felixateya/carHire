@@ -393,7 +393,7 @@ select {
   }
   .search {
     width: 100%;
-    height: max-content;
+    height: 100vh;
     background: url(/images/wag2.jpg);
     background-size: cover;
     background-repeat: no-repeat;
