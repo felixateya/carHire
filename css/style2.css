@@ -11,7 +11,10 @@ body {
 .home {
   width: 100%;
   display: flex;
-  background-color: #01321d;
+  /* background-color: #01321d; */
+  background: url(/images/range.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
   flex-direction: column;
   position: relative;
 }
