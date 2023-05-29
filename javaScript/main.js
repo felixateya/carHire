@@ -41,7 +41,7 @@ document.getElementById("book").onclick = function () {
   window.location.href = "/cars.html";
 };
 
-document.getElementById("logOut").onclick = funtion() {
+document.getElementById("logOut").onclick = function() {
   window.location.href = "/index.html";
 }
 
