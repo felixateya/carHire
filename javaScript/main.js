@@ -41,6 +41,10 @@ document.getElementById("book").onclick = function () {
   window.location.href = "/cars.html";
 };
 
+document.getElementById("logOut").onclick = funtion() {
+  window.location.href = "/index.html";
+}
+
 function changeBackground() {
   var myDiv = document.getElementById("myDiv");
   if (window.scrollY > 0) {
