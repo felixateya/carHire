@@ -39,6 +39,16 @@
   height: 50px;
 }
 
+.menu button {
+  background-color: transparent;
+  /* margin-top: 20px; */
+  border-color: transparent;
+  /* border-radius: 5px; */
+  /* font-size: 22px; */
+  color: #f5f5f5;
+  font-weight: 600;
+}
+
 .list {
   list-style: none;
   display: flex;

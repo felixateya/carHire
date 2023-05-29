@@ -18,18 +18,18 @@ firebase.auth().onAuthStateChanged((user) => {
         //   "Welcome" + " " + userName;
         // document.getElementById("email").innerText = userEmail;
       });
-    // document.getElementById("logOut").onclick = function () {
-    //   firebase
-    //     .auth()
-    //     .signOut()
-    //     .then(() => {
-    //       // Sign-out successful.
-    //       window.location.href = "/login.html";
-    //     })
-    //     .catch((error) => {
-    //       // An error happened.
-    //     });
-    // };
+      document.getElementById("logOut").onclick = function () {
+        firebase
+          .auth()
+          .signOut()
+          .then(() => {
+            // Sign-out successful.
+            window.location.href = "/index.html";
+          })
+          .catch((error) => {
+            // An error happened.
+          });
+      };
   } else {
     window.location.href = "/index.html";
   }
