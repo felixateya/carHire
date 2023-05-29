@@ -63,6 +63,7 @@ body {
   /* font-size: 22px; */
   color: #f5f5f5;
   font-weight: 600;
+  cursor: pointer;
 }
 
 .list {
@@ -133,6 +134,10 @@ body {
   background-size: cover;
   display: flex;
   flex-direction: column;
+}
+
+.opacity{
+  background-color: transparent;
 }
 
 .search h1 {
@@ -362,6 +367,10 @@ select {
     background: url(/images/urus.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+  }
+
+  .opacity{
+    background-color: transparent;
   }
 
   .home video {

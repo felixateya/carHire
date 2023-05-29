@@ -5,7 +5,7 @@
 
 
 
-.navbar {
+.navbar1 {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -18,12 +18,12 @@
   font-family: "Dancing Script", cursive;
 }
 
-.navbar.change-background {
+.navbar1.change-background {
   background-color: #216953;
   color: #fff;
 }
 
-.navbar a {
+.navbar1 a {
   text-decoration: none;
   color: #fff;
   font-weight: 600;
@@ -42,21 +42,22 @@
 .menu button {
   background-color: transparent;
   /* margin-top: 20px; */
-  border-color: transparent;
+  border: none;
   /* border-radius: 5px; */
   /* font-size: 22px; */
   color: #f5f5f5;
-  font-weight: 600;
+  font-weight: 900;
+  cursor: pointer;
 }
 
-.list {
+.list  {
   list-style: none;
   display: flex;
   gap: 20px;
 }
 
 #toggler,
-.navbar label {
+.navbar1 label {
   display: none;
 }
 
