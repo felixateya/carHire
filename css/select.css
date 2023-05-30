@@ -106,8 +106,7 @@
   height: 80%;
   border-radius: 10px;
   border: 3px solid #555;
-  animation-duration: 10s;
-  animation-timing-function: ease-in-out;
+  transition: 0.4s ease-in-out;
 }
 
 .car img:hover {
@@ -134,7 +133,7 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-    height: 7vh;
+    height: 8vh;
     background-color: #7a7a7a;
   }
 
