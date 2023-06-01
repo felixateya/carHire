@@ -8,39 +8,35 @@
 
 .big {
   max-width: 100%;
-  min-width: 390px;
   height: 100vh;
-  min-height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  background: url(/images/wagon.avif);
-  /* background-color: #73b0cd; */
-  background-size: cover;
-  background-repeat: no-repeat;
-  filter: blur(20px);
-  position: relative;
+  /* background: url(/images/wagon.avif); */
+  background-color: rgb(37 39 52);
+  /* filter: blur(20px); */
+  /* position: relative; */
 }
 .logo img {
   width: 70px;
   height: 50px;
 }
 .fire {
-  top: 10px;
-  left: 10%;
-  position: absolute;
-  margin-top: 5%;
-  width: 70%;
-  /* height: 85%; */
+  /* top: 10px; */
+  /* left: 10%; */
+  /* position: absolute; */
+  /* margin-top: 5%; */
+  width: 80%;
+  height: 89%;
   display: flex;
   /* background-color: #f5f5f5; */
   background: url(/images/wagon.avif);
   background-size: cover;
   background-repeat: no-repeat;
   border-radius: 2px;
-  z-index: 100;
+  /* z-index: 100; */
   flex-wrap: wrap;
-  box-shadow: 5px 2px 19px 2px #1e8fbb;
+  box-shadow: 5px 2px 19px 2px rgb(3, 9, 51);
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
@@ -217,17 +213,18 @@ textarea {
 } */
 
 
-@media (max-width: 1156px), (max-width: 350px) {
+@media (max-width: 1156px) {
   .big {
     justify-content: flex-start;
     width: 100%;
-    height: 100vh;
+    height: 105vh;
   }
   .fire {
     width: 100%;
-    height: 100vh;
+    height: 100%;
     display: flex;
     flex-direction: column;
+    background: rgb(37 39 52);
     padding: 0;
     left:0;
   }
@@ -237,12 +234,13 @@ textarea {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    background-color: #73b0cd;
+    background-color: rgb(37 39 52);
   }
   .left input {
     background-color: #fff;
   }
   .right {
+  border-bottom: 3px solid grey;
     width: 100%;
     height: 24%;
     border-radius: 0;

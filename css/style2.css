@@ -11,7 +11,7 @@ body {
 .home {
   width: 100%;
   display: flex;
-  background-image: linear-gradient(-35deg,  #3f1109, black, black, #3f1109 );
+  background: rgb(37 39 52);
   /* background: url(/images/range.jpg); */
   /* background-size: cover; */
   /* background-repeat: no-repeat; */
@@ -21,12 +21,11 @@ body {
   animation: 10s ease-in-out;
   /* -webkit-transition: 0.6s ease-in-out; */
   /* animation-delay: 1s; */
+height: 70vh;
+  border-bottom: 3px solid #f5f5f5;
 }
 
-.home:hover{
-  background-image: linear-gradient(35deg,  #3f1109, black, black, #3f1109 );
 
-}
 
 
 .logo {
@@ -49,9 +48,9 @@ body {
   
 }
 .navbar1.change-background {
-  background-color: #01321d;
+  background-color: rgb(37 39 52);
   color: #fff;
-  border-bottom: 1px dotted #fff ;
+  border-bottom: 3px solid rgb(13, 14, 19) ;
 }
 
 .navbar1 a {
@@ -110,7 +109,7 @@ body {
 .mine p {
   font-size: 16px;
   text-align: justify;
-  width: 70%;
+  width: 90%;
   color: rgb(248, 108, 9);
   padding-top: 20px;
 }
@@ -124,9 +123,9 @@ body {
 .mine button {
   width: 200px;
   height: 50px;
-  background-color: #01321d;
+  background-color: rgb(37 39 52);
   margin-top: 20px;
-  border-color: #01321d;
+  border: 3px solid rgb(13, 14, 19) ;
   border-radius: 5px;
   font-size: 26px;
   color: #f5f5f5;
@@ -143,6 +142,7 @@ body {
   background-size: cover;
   display: flex;
   flex-direction: column;
+  height: 100vh;
 }
 
 .opacity{
@@ -202,9 +202,9 @@ select {
   /* margin-left: 20px; */
   width: 400px;
   padding: 10px 0;
-  background-color: #01321d;
+  background-color: rgb(37 39 52);
   color: #f5f5f5;
-  border-color: #01321d;
+  border:none;
   border-radius: 5px;
   font-weight: 600;
   font-size: 20px;
@@ -217,7 +217,7 @@ select {
 
 .like {
   width: 100%;
-  background-color: #01321d;
+  background-color: rgb(37 39 52);
   flex-wrap: wrap;
   padding-left: 20px;
   padding-bottom: 2px;
@@ -290,7 +290,7 @@ select {
 
 .footer {
   width: 100%;
-  background-color: #01321d;
+  background-color: rgb(37 39 52);
   display: flex;
   flex-direction: column;
   
@@ -413,19 +413,25 @@ select {
 
   .home {
     width: 100%;
-    height: 912px;
+    height:100%;
     /* background: url(/images/rez.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position:center; */
   }
+  .mine h1{
+    margin-top: 35px;
+  }
   .search {
     width: 100%;
-    height: 100vh;
-    background: url(/images/wag2.jpg);
+    height: 90vh;
+    background:rgb(37 39 52);
     background-size: cover;
     background-repeat: no-repeat;
     background-position:center;
+    display: flex;
+    flex-wrap: wrap;
+    /* flex:  1 1 20px; */
   }
 
   .home video {
@@ -451,14 +457,11 @@ select {
     max-height: max-content;
   }
 
-  .mine p {
-    display: none;
-  }
 
-  .search {
+  /* .search {
     width: 100%;
     height: 100vh;
-  }
+  } */
   .form {
     width: 98%;
     padding-left: 10px;
@@ -468,6 +471,7 @@ select {
   }
 
   .like {
+    width: 100%;
     display: flex;
     flex-direction: column;
     /* height: 100vh; */
@@ -486,7 +490,8 @@ select {
   .top {
     flex-wrap: wrap;
   }
-
+  
+  
   .bottom {
     flex-wrap: wrap;
   }
@@ -496,10 +501,14 @@ select {
   }
 
   .top p {
-    display: none;
+    /* display: none; */
+    text-align: justify;
+    margin-left: 30px;
   }
   .bottom p {
-    display: none;
+    /* display: none; */
+    text-align: justify;
+    margin-left: 30px;
   }
 
   .best,
@@ -511,9 +520,10 @@ select {
   .customer {
     display: flex;
     flex-direction: column;
-    width: 50%;
+    justify-content: center;
+    width: 100%;
     height: 5%;
-    margin-bottom: 1%;
+    margin-bottom: 12px;
   }
 
   .all1 {
