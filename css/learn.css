@@ -47,11 +47,11 @@
 }
 
 .homing h1 {
-    text-align: center;
-    background: url(/images/evoque.jpg);
-    background-clip: text;
-    -webkit-background-clip: text;
-    font-size: 36px;
+  text-align: center;
+  background: url(/images/evoque.jpg);
+  background-clip: text;
+  -webkit-background-clip: text;
+  font-size: 36px;
 }
 
 .para {
@@ -68,22 +68,20 @@
   padding: 10px;
   margin-top: 20px;
   /* text-align: left; */
-  border: 5px solid  #f5f5f5;
+  border: 5px solid #f5f5f5;
   color: chocolate;
   border-radius: 10px;
   /* background-color: indianred; */
 }
 
-@media screen and (max-width: 1024px){
-    .homing {
-        height: max-content;
-        padding: 0 10px;
-    }
-    .learn {
-        height: max-content;
-        padding-bottom: 20px;
-    }
+@media screen and (max-width: 1024px) {
+  .homing {
+    margin-top: 100px;
+    height: max-content;
+    padding: 0 10px;
+  }
+  .learn {
+    height: max-content;
+    padding-bottom: 20px;
+  }
 }
-    
-
-
