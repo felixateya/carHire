@@ -197,7 +197,7 @@ h1 {
 .create {
   display: flex;
   /* justify-content: space-between; */
-  width: 90%;
+  width: 100%;
   color: #fff;
   margin-top: 10px;
   margin-bottom: 10px;
