@@ -61,6 +61,7 @@ document.getElementById("google").onclick = function () {
       var user = result.user;
       // IdP data available in result.additionalUserInfo.profile.
       // ...
+      window.location.href = "Concept.html"
     })
     .catch((error) => {
       // Handle Errors here.
