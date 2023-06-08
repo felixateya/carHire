@@ -36,6 +36,11 @@ document.getElementById("register").onclick = function () {
       var errorMessage = error.message;
       console.log(errorMessage);
       // ..
+      if(error){
+        document.getElementById("wrong").innerText = "Wrong Email format!"
+       }  else {
+         document.getElementById("wrong").innerText = "" 
+        }
     });
 };
 
@@ -78,4 +83,14 @@ document.getElementById("google").onclick = function () {
 
 document.getElementById("learn").onclick = function () {
   window.location.href = '/learn.html';
+}
+create.onclick = function() {
+  window.location.href = "index.html";
+}
+
+check.onclick = togglePassword;
+
+function togglePassword() {
+  if(check.checked) password.type = "text";
+  else password.type = "password"
 }

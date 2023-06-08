@@ -5,7 +5,7 @@
 }
 
 body {
-  font-family: "Stick No Bills", sans-serif;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 .home {
@@ -15,15 +15,12 @@ body {
   flex-direction: column;
   position: relative;
   animation: 10s ease-in-out;
-height: 70vh;
-  border-bottom: 3px solid #f5f5f5;
+  height: 100vh;
+  border-bottom: 1px solid #000;
 }
 
-
-
-
 .logo {
-  font-family: 'Secular One', sans-serif;
+  font-family: "Secular One", sans-serif;
 }
 .logo img {
   width: 70px;
@@ -33,30 +30,38 @@ height: 70vh;
 .navbar1 {
   display: flex;
   width: 100%;
+  height: 10%;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
   padding: 5px;
   position: fixed;
   z-index: 100;
-  
+  transition: 1.4s ease-in;
+  transition: 0.3s ease-out;
 }
 .navbar1.change-background {
-  background-color: rgb(37 39 52);
-  color: #fff;
-  border-bottom: 3px solid rgb(13, 14, 19) ;
+  background-color: white;
+  
+  border-bottom: 3px solid rgb(13, 14, 19);
+}
+.navbar1.change-background a, .navbar1.change-background button{
+  color: #000;
+  font-weight: 700;
 }
 
 .navbar1 a {
   text-decoration: none;
-  color: #f5f5f5;
-  font-weight: 600;
+  color: #fff;
+  font-weight: 700;
 }
 
 .logo {
   margin-right: 50px;
 }
-
+.menu {
+  margin-top: 20px;
+}
 .menu button {
   background-color: transparent;
   /* margin-top: 20px; */
@@ -64,14 +69,15 @@ height: 70vh;
   /* border-radius: 5px; */
   /* font-size: 22px; */
   color: #f5f5f5;
-  font-weight: 600;
+  font-weight: 700;
   cursor: pointer;
+  /* padding: -2px; */
 }
 
 .list {
   list-style: none;
   display: flex;
-  gap: 25px;
+  gap: 20px;
 }
 
 #toggler,
@@ -98,14 +104,14 @@ height: 70vh;
   font-size: 55px;
   font-style: 600;
   text-align: center;
-  color: chocolate;
+  color: white;
 }
 
 .mine p {
   font-size: 16px;
   text-align: justify;
   width: 90%;
-  color: rgb(248, 108, 9);
+  color: wheat;
   padding-top: 20px;
 }
 
@@ -118,29 +124,33 @@ height: 70vh;
 .mine button {
   width: 200px;
   height: 50px;
-  background-color: rgb(37 39 52);
+  background-color: white;
   margin-top: 20px;
-  border: 3px solid rgb(13, 14, 19) ;
+  border: 3px solid rgb(13, 14, 19);
   border-radius: 5px;
-  font-size: 26px;
-  color: #f5f5f5;
+  font-size: 24px;
+  color: rgb(37 39 52);
   font-weight: 600;
-}
-/* *::-webkit-scrollbar{
-  display: none;
-} */
-.search {
-  width: 100%;
-  background: url(/images/wagon.avif);
-  object-fit: fill;
-  background-repeat: no-repeat;
-  background-size: cover;
-  display: flex;
-  flex-direction: column;
-  height: 100vh;
+  transition: 0.9s;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
-.opacity{
+.mine button:hover{
+  background-color: rgb(13, 14, 19);
+  color: white;
+  border: 3px solid white;
+}
+.search {
+  width: 100%;
+  background: rgb(37 39 52);
+  display: flex;
+  flex-direction: column;
+  height: 105vh; 
+}
+
+
+
+.opacity {
   background-color: transparent;
 }
 
@@ -176,6 +186,9 @@ select {
   border: 3px solid #999;
 }
 
+
+
+
 .form label {
   color: #f5f5f5;
   font-weight: 500;
@@ -192,7 +205,6 @@ select {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
-
 .form button {
   margin-top: 10px;
   /* margin-left: 20px; */
@@ -200,16 +212,32 @@ select {
   padding: 10px 0;
   background-color: rgb(37 39 52);
   color: #f5f5f5;
-  border:none;
+  border: none;
   border-radius: 5px;
   font-weight: 600;
   font-size: 20px;
   margin-bottom: 5px;
 }
 
-/* .carousel-item {
-  height: 60vh;
-} */
+.exp{
+  width:100%;
+  padding:  30px 0;
+  height: max-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(37 39 52);
+}
+#carouselExampleCaptions{
+  width: 60%;
+  height: 90%;
+}
+
+.carousel-inner{
+  border-radius: 20px;
+
+}
+
 
 .like {
   width: 100%;
@@ -289,7 +317,6 @@ select {
   background-color: rgb(37 39 52);
   display: flex;
   flex-direction: column;
-  
 }
 
 .all1 {
@@ -374,13 +401,13 @@ select {
     background-repeat: no-repeat; */
   }
 
-  .opacity{
+  .opacity {
     background-color: transparent;
   }
 
   .home video {
-  display: none;
-}
+    display: none;
+  }
 
   .mine h1 {
     font-size: 35px;
@@ -393,10 +420,7 @@ select {
   .search {
     width: 100%;
     height: max-content;
-    background: url(/images/wag2.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position:center;
+    background: rgb(37 39 52);
     display: flex;
     flex-direction: column;
   }
@@ -404,8 +428,18 @@ select {
     width: 80%;
   }
   .form input,
-  select{
+  select {
     width: 270px;
+  }
+.exp {
+  padding: 0;
+}
+  #carouselExampleCaptions{
+    width: 100%;
+    height: 100%;
+  }
+  .carousel-inner{
+    border-radius: 0px;
   }
   .copyright {
     display: flex;
@@ -417,7 +451,6 @@ select {
 }
 
 @media (max-width: 1023px) {
-  
   .menu {
     width: 100%;
     max-height: 0;
@@ -426,19 +459,19 @@ select {
 
   .home {
     width: 100%;
-    height:100%;
+    height: 100%;
     /* background: url(/images/rez.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position:center; */
   }
-  .mine h1{
+  .mine h1 {
     margin-top: 35px;
   }
   .search {
     width: 100%;
     height: max-content;
-    background:rgb(37 39 52);
+    background: rgb(37 39 52);
     display: flex;
     flex-direction: column;
     /* flex-wrap: wrap; */
@@ -446,8 +479,8 @@ select {
   }
 
   .home video {
-  display: none;
-}
+    display: none;
+  }
   .list {
     display: flex;
     flex-direction: column;
@@ -467,7 +500,6 @@ select {
   #toggler:checked ~ .menu {
     max-height: max-content;
   }
-
 
   /* .search {
     width: 100%;
@@ -501,8 +533,7 @@ select {
   .top {
     flex-wrap: wrap;
   }
-  
-  
+
   .bottom {
     flex-wrap: wrap;
   }

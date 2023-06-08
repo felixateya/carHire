@@ -12,16 +12,20 @@ document.getElementById("login").onclick = function () {
       // ...
       window.location.href = "/Concept.html";
     })
+
     .catch((error) => {
       var errorCode = error.code;
       var errorMessage = error.message;
       console.log(errorMessage);
+      if (error) {
+        document.getElementById("wrong").innerText = "Wrong email or Password!";
+      } else {
+        document.getElementById("wrong").innerText = "";
+      }
     });
 };
 
 document.getElementById("google").onclick = function () {
-  
-
   firebase
     .auth()
     .getRedirectResult()
@@ -106,6 +110,13 @@ document.getElementById("create").onclick = function () {
   window.location.href = "/register.html";
 };
 
-document.getElementById("learn").onclick = function() {
+document.getElementById("learn").onclick = function () {
   window.location.href = "/learn.html";
+};
+
+check.onclick = togglePassword;
+
+function togglePassword() {
+  if (check.checked) password.type = "text";
+  else password.type = "password";
 }
