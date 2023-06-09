@@ -37,7 +37,7 @@ document.getElementById("register").onclick = function () {
       console.log(errorMessage);
       // ..
       if(error){
-        document.getElementById("wrong").innerText = "Wrong Email format!"
+        document.getElementById("wrong").innerText = "Invalid Email!"
        }  else {
          document.getElementById("wrong").innerText = "" 
         }
