@@ -265,7 +265,7 @@ textarea {
   .big {
     justify-content: flex-start;
     width: 100%;
-    height: max-content;
+    height: 115vh;
     background: rgb(37 39 52);
   }
   .fire {
