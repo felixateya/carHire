@@ -3,39 +3,98 @@
   padding: 0;
 }
 
-.learn {
+/* .learn {
   width: 100%;
   height: 10vh;
   display: flex;
   flex-direction: column;
   position: relative;
   background-color: #cce2eb;
-}
+} */
 
-.navbar {
+.navbar1 {
   display: flex;
   justify-content: space-between;
   padding: 5px 6px;
   width: 100%;
-  background-color: #cce2eb;
+  background: transparent;
   z-index: 1;
   position: fixed;
   border-bottom: 3px solid rgb(25, 27, 37);
 }
 
-.navbar a {
+.navbar1 a {
   text-decoration: none;
   color: black;
   font-weight: 600;
 }
 
-.navbar button {
-  background: transparent;
+.btn  {
+  position: relative;
+}
+
+.btn button{
+  width: 150px;
+  border-radius: 20px;
+  padding: 10px;
   border: none;
-  font-size: 22px;
   font-weight: 600;
-  color: black;
+  font-size: 16px;
   cursor: pointer;
+  transition: 0.3s ease;
+}
+
+#logIn{
+  background-color: #154b61;
+  color: #fff;
+  position: absolute;
+  z-index: 2;
+  margin-left: -120px;
+}
+
+#logIn:hover {
+  background-color: #09273357;
+  color: black;
+  mix-blend-mode: darken;
+  position: absolute;
+  z-index: 1;
+  margin-left: -120px;
+}
+
+#logIn:hover + #Register{
+  background-color: #092733;
+  color: #fff;
+  position: relative;
+  z-index: 2;
+}
+
+#Register{
+  background-color: #09273357;
+  color: black;
+  mix-blend-mode: darken;
+  position: relative;
+  z-index: 1;
+}
+
+#Register:hover {
+  background-color: #092733;
+  color: #fff;
+  position: relative;
+  z-index: 1;
+}
+
+#Register:hover + #logIn{
+  background-color: #09273357;
+  color: black;
+  position: absolute;
+  z-index: 2;
+  margin-left: -120px;
+}
+
+.navbar1.change-background {
+  background-color: white;
+  
+  border-bottom: 3px solid rgb(13, 14, 19);
 }
 
 .port {
@@ -49,7 +108,7 @@
 }
 
 .port h1{
-  margin-top: 60px;
+  margin-top: 100px;
   margin-bottom: 20px;
   text-align: center;
   color: chocolate;

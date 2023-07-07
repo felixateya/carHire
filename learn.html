@@ -13,14 +13,18 @@
   ></script>
     <link rel="icon" href="nicer.ico" type="image/x-icon">
   </head>
-  <body>
+  <body onscroll="changeBackground()">
     
     <section class="learn">
-      <div class="navbar">
+      <div class="navbar1" id="myDiv">
         <a href="/Concept.html" class="logo"
           ><img src="/images/light.png" alt="" /> CONCEPT</a
         >
-            <button id="logIn">Log In</button>         
+        <div class="btn">
+          <button id="logIn">Log In</button>         
+          <button id="Register">Sign Up</button>         
+
+        </div>
 
       </div>
       </section>
@@ -78,12 +82,24 @@
         
     </section>
     
-      
+      <!-- <script src="javaScript/main.js"></script> -->
     <script>
       document.getElementById("logIn").onclick = function () {
         window.location.href = "/index.html";
       };
-
+document.getElementById("Register").onclick = function () {
+  window.location.href = "/register.html";
+}
+      function changeBackground() {
+        var myDiv = document.getElementById("myDiv");
+        if (window.scrollY > 0) {
+          myDiv.classList.add("change-background");
+        } 
+         else {
+          myDiv.classList.remove("change-background");
+          
+        }
+      }
 
 
       
