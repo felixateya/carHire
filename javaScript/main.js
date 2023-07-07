@@ -49,7 +49,11 @@ function changeBackground() {
   var myDiv = document.getElementById("myDiv");
   if (window.scrollY > 0) {
     myDiv.classList.add("change-background");
-  } else {
+  } 
+   else {
     myDiv.classList.remove("change-background");
+    
   }
 }
+
+
