@@ -146,7 +146,9 @@
   flex: 1;
 }
 
-
+.footer{
+  padding-top: 20px;
+}
 
 .exp {
   display: flex;
