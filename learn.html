@@ -46,7 +46,7 @@
           <div class="about">
             <h3>About Us</h3>
             <h2>Concept</h2>
-            <p>Concept is a car hire company that provides a wide range of vehicles for short-term and long-term rentals. They offer
+            <p>Concept is a car hire company that provides a wide range of vehicles for short-term and long-term rentals. We offer
             high-quality, reliable and well-maintained cars, including economy, luxury, SUVs, and vans.</p>
             <div class="font">
               <i class="fa-brands fa-facebook" aria-hidden="true"></i>
@@ -68,7 +68,7 @@
           </div>
         </div>
         <div class="copyright">
-          <p >Copyright <i class="fa fa-copyright" aria-hidden="true"></i>Concept 2023. All rights reserved.</p>
+          <p >Copyright <i class="fa fa-copyright" aria-hidden="true"></i>Concept <span id="year"></span>. All rights reserved.</p>
           <div class="accept">
             <p>We accept</p>
             <div class="pay">
@@ -101,7 +101,8 @@ document.getElementById("Register").onclick = function () {
         }
       }
 
-
+const year = new Date().getFullYear()
+document.getElementById("year").innerText = year
       
     </script>
   </body>

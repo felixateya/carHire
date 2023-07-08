@@ -57,7 +57,7 @@
   color: black;
   /* mix-blend-mode: darken; */
   /* position: absolute; */
-  /* z-index: 2; */
+  z-index: 2;
   /* margin-left: -120px; */
 }
 
@@ -65,7 +65,7 @@
   background-color: #092733;
   color: #fff;
   /* position: relative; */
-  /* z-index: 1; */
+  z-index: 1;
 }
 
 #Register{
@@ -85,9 +85,6 @@
 #Register:hover + #logIn{
   background-color: #09273357;
   color: black;
-  position: absolute;
-  z-index: 1;
-  margin-left: -120px;
 }
 
 .navbar1.change-background {
