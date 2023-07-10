@@ -111,7 +111,7 @@ document.getElementById("create").onclick = function () {
 };
 
 document.getElementById("learn").onclick = function () {
-  window.location.href = "/learn.html";
+  window.location.href = "/index.html";
 };
 
 check.onclick = togglePassword;

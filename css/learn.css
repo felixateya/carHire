@@ -122,7 +122,7 @@
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  transition: flex 0.8s ease-in;
+  transition: 0.6s ease-in-out;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -133,7 +133,7 @@
   content: " ";
 }
 .items  div:hover{
-  flex: 6;
+  flex: 10;
   font-size: 22px;
   padding-top: 30%;
   color: #fff;

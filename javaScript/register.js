@@ -82,7 +82,7 @@ document.getElementById("google").onclick = function () {
 };
 
 document.getElementById("learn").onclick = function () {
-  window.location.href = '/learn.html';
+  window.location.href = '/index.html';
 }
 create.onclick = function() {
   window.location.href = "index.html";

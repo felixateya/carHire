@@ -4,61 +4,106 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>www.conceptllc.com</title>
-    <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    />
-    <link rel="stylesheet" href="/css/style.css" />
-    <script src="https://use.fontawesome.com/28f229e3ea.js"></script>
-    <link rel="icon" href="nicer.ico" type="image/x-icon" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/style2.css" />
+    <link rel="stylesheet" href="/css/learn.css" />
+    <script
+    src="https://kit.fontawesome.com/d6f91ed192.js"
+    crossorigin="anonymous"
+  ></script>
+    <link rel="icon" href="nicer.ico" type="image/x-icon">
   </head>
+  <body onscroll="changeBackground()">
+    
+    <section class="learn">
+      <div class="navbar1" id="myDiv">
+        <a href="/Concept.html" class="logo"
+          ><img src="/images/light.png" alt="" /></a
+        >
+        <div class="btn">`
+          <button id="logIn">Log In</button>         
+          <button id="Register">Sign Up</button>         
 
-  <body>
-    <section class="big">
-      <section class="fireon animate__animated animate__backInLeft">
-        <div class="opc">
-          <div class="right">
-            <h1>#1 Car rental service in the country</h1>
-            <p>
-              Welcome to the most trusted car rental service in the nation. We
-              offer a variety of cars ranging from high-end to economical
-              packages.
-            </p>
-            <button id="learn">learn more</button>
-          </div>
-          <div class="left">
-            <h5>Concept <span>Cars</span></h5>
-            <h6>Log In</h6>
-            <label for="">Email Address*</label>
-            <input type="email" id="email" required />
-            <label for="">Password*</label>
-            <input type="password" id="password" required />
-            <p id="wrong" style="color: red;width:max-content;"></p>
-            <div class="show">
-              <input type="checkbox" name="" id="check" />
-              <p>Show password</p> 
-            </div>
-            <label for="">Password must be atleast 6 characters</label>
-            <button id="login">Log in</button>
-            <p>Or</p>
-            <button id="google">
-              <i class="fa fa-google" aria-hidden="true"></i>Sign in with google
-            </button>
-            <div class="create">
-              <h2>Don't have an account?</h2>
-              <a id="create">Click Here</a>
-            </div>
-            <a href="" id="forget">forgot password?</a>
-          </div>
+        </div>
+
+      </div>
+      </section>
+      <section class="port">
+<h1>Car Catalogue</h1>
+        <div class="items">
+          <div style="background: url(/images/urus.jpg); background-size:cover; background-repeat:no-repeat">lamborghini urus venturas</div>
+          <div style="background: url(/images/escalade.jpg); background-size:cover; background-repeat:no-repeat">Cadillac Escalade 2023</div>
+          <div style="background: url(/images/range.jpg);background-size:cover; background-repeat:no-repeat ">Range Rover Sports</div>
+          <div style="background: url(/images/jeep.jpg);background-size:cover; background-repeat:no-repeat">2023 Jeep Compass</div>
+          <div style="background: url(/images/AMG.jpg);background-size:cover; background-repeat:no-repeat"> 2023 Mercedes-AMG G63 </div>
+          <div style="background: url(/images/lexus.jpg); background-size:cover; background-repeat:no-repeat">2023 Lexus GX</div>
+          <div style="background: url(/images/cayenne.jpg);background-size:cover; background-repeat:no-repeat">Porsche Cayenne</div>
+          <div style="background: url(/images/offroad.jpeg); background-size:cover; background-repeat:no-repeat">Range Rover Evoque</div>
         </div>
       </section>
+      <section class="footer" id="footer">
+        <div class="all1">
+          <div class="about">
+            <h3>About Us</h3>
+            <h2>Concept</h2>
+            <p>Concept is a car hire company that provides a wide range of vehicles for short-term and long-term rentals. We offer
+            high-quality, reliable and well-maintained cars, including economy, luxury, SUVs, and vans.</p>
+            <div class="font">
+              <i class="fa-brands fa-facebook" aria-hidden="true"></i>
+              <i class="fa fa-twitter" aria-hidden="true"></i>
+              <i class="fa fa-instagram" aria-hidden="true"></i>
+              <i class="fa fa-linkedin" aria-hidden="true"></i>
+            </div>
+          </div>
+          <div class="link">
+            <h3>Quick Links</h3>
+            <a href="">About Us</a>
+            <a href="">Contact Us</a>
+            <a href="cars.html" id="cars">Cars</a>
+          </div>
+          <div class="us">
+            <h3 style="color:#f5f5f5">Contact Us</h3>
+            <p>Phone Number: <span>+254746886189</span></p>
+            <p>Email Address: <a href="">concept@gmail.com</a></p>
+          </div>
+        </div>
+        <div class="copyright">
+          <p >Copyright <i class="fa fa-copyright" aria-hidden="true"></i>Concept <span id="year"></span>. All rights reserved.</p>
+          <div class="accept">
+            <p>We accept</p>
+            <div class="pay">
+              <i class="fa fa-cc-paypal" aria-hidden="true"></i>
+              <i class="fa fa-cc-visa" aria-hidden="true"></i>
+              <i class="fa fa-cc-mastercard" aria-hidden="true"></i>
+            </div>
+          </div>
+  
+      </div>
+        
     </section>
+    
+      <!-- <script src="javaScript/main.js"></script> -->
+    <script>
+      document.getElementById("logIn").onclick = function () {
+        window.location.href = "/index.html";
+      };
+document.getElementById("Register").onclick = function () {
+  window.location.href = "/register.html";
+}
+      function changeBackground() {
+        var myDiv = document.getElementById("myDiv");
+        if (window.scrollY > 0) {
+          myDiv.classList.add("change-background");
+        } 
+         else {
+          myDiv.classList.remove("change-background");
+          
+        }
+      }
 
-    <script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-analytics.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-auth.js"></script>
-    <script src="/javaScript/config.js"></script>
-    <script src="/javaScript/login.js"></script>
+const year = new Date().getFullYear()
+document.getElementById("year").innerText = year
+      
+    </script>
   </body>
 </html>
