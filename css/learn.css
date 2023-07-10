@@ -144,9 +144,12 @@
 }
 
 .footer{
+  border-top: 1px dashed #999;
   padding-top: 20px;
 }
-
+.like{
+  padding-top: 30px;
+}
 .exp {
   display: flex;
   justify-content: space-between;

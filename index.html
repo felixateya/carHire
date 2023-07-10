@@ -8,186 +8,276 @@
     <link rel="stylesheet" href="/css/style2.css" />
     <link rel="stylesheet" href="/css/learn.css" />
     <script
-    src="https://kit.fontawesome.com/d6f91ed192.js"
-    crossorigin="anonymous"
-  ></script>
-    <link rel="icon" href="nicer.ico" type="image/x-icon">
+      src="https://kit.fontawesome.com/d6f91ed192.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="icon" href="nicer.ico" type="image/x-icon" />
   </head>
   <body onscroll="changeBackground()">
-    
     <section class="learn">
       <div class="navbar1" id="myDiv">
         <a href="/Concept.html" class="logo"
           ><img src="/images/light.png" alt="" /></a
         >
-        <div class="btn">`
-          <button id="logIn">Log In</button>         
-          <button id="Register">Sign Up</button>         
-
+        <!-- <svg
+          class="logo"
+          width="24%"
+          height="80"
+          viewBox="0 0 167 83"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M31.4306 20.9062C32.1598 20.9062 32.816 21.0312 33.3994 21.2812C34.0035 21.5104 34.5556 21.7708 35.0556 22.0625C35.5765 22.3542 36.066 22.625 36.5244 22.875C36.9827 23.1042 37.4515 23.2188 37.9306 23.2188C38.3056 23.1979 38.7327 23.1458 39.2119 23.0625C39.6285 22.9792 40.1077 22.8542 40.6494 22.6875C41.2119 22.5 41.8369 22.2292 42.5244 21.875C41.8369 22.5417 41.2744 23.1042 40.8369 23.5625C40.4202 24 40.0973 24.3646 39.8681 24.6562C39.5973 24.9896 39.3994 25.25 39.2744 25.4375C39.1494 25.6667 38.9619 26.0104 38.7119 26.4688C38.4827 26.8854 38.1702 27.4479 37.7744 28.1562C37.3785 28.8438 36.8785 29.75 36.2744 30.875C36.2744 29.4375 36.1285 28.3229 35.8369 27.5312C35.566 26.7396 35.264 26.1354 34.9306 25.7188C34.5348 25.2396 34.0869 24.9375 33.5869 24.8125C33.1285 24.75 32.6702 24.8333 32.2119 25.0625C31.7535 25.2708 31.2952 25.5833 30.8369 26C30.3994 26.4167 29.9723 26.9167 29.5556 27.5C29.1598 28.0625 28.7952 28.6562 28.4619 29.2812C28.1494 29.9062 27.889 30.5417 27.6806 31.1875C27.4723 31.8125 27.3369 32.3958 27.2744 32.9375C27.2119 33.4167 27.2015 33.9792 27.2431 34.625C27.2848 35.25 27.3785 35.8958 27.5244 36.5625C27.6702 37.2083 27.8577 37.8438 28.0869 38.4688C28.316 39.0938 28.5973 39.6562 28.9306 40.1562C29.2848 40.6354 29.6806 41.0312 30.1181 41.3438C30.5556 41.6354 31.0556 41.7708 31.6181 41.75C32.2431 41.7083 32.8577 41.5208 33.4619 41.1875C33.9827 40.9167 34.514 40.5 35.0556 39.9375C35.5973 39.3542 36.066 38.5312 36.4619 37.4688L41.0869 38.3125C39.7535 39.9375 38.4515 41.1562 37.1806 41.9688C35.9306 42.7812 34.8056 43.3542 33.8056 43.6875C32.639 44.0625 31.5348 44.2396 30.4931 44.2188C29.1806 44.0729 27.9515 43.6771 26.8056 43.0312C25.6598 42.3854 24.6702 41.6042 23.8369 40.6875C23.0244 39.75 22.389 38.7292 21.9306 37.625C21.4723 36.5208 21.2744 35.4375 21.3369 34.375C21.3785 33.6667 21.5244 32.8438 21.7744 31.9062C22.0244 30.9479 22.3577 29.9688 22.7744 28.9688C23.2119 27.9688 23.7327 26.9896 24.3369 26.0312C24.941 25.0729 25.6077 24.2188 26.3369 23.4688C27.066 22.6979 27.8577 22.0833 28.7119 21.625C29.5869 21.1458 30.4931 20.9062 31.4306 20.9062ZM50.0944 30C50.636 30 51.1985 30.1042 51.7819 30.3125C52.3652 30.5 52.9277 30.75 53.4694 31.0625C54.011 31.3542 54.5006 31.6771 54.9381 32.0312C55.3965 32.3646 55.7715 32.6875 56.0631 33C56.584 33.5625 56.9381 34.3229 57.1256 35.2812C57.334 36.2188 57.3756 37.1875 57.2506 38.1875C57.1256 39.1667 56.834 40.0938 56.3756 40.9688C55.9173 41.8438 55.2819 42.4896 54.4694 42.9062C53.886 43.1979 53.3131 43.4271 52.7506 43.5938C52.1881 43.7604 51.6465 43.8854 51.1256 43.9688C50.6048 44.0521 50.1152 44.0938 49.6569 44.0938C49.1985 44.0938 48.8027 44.0833 48.4694 44.0625C47.8444 44.0208 47.1881 43.8021 46.5006 43.4062C45.834 43.0104 45.1985 42.5208 44.5944 41.9375C44.011 41.3542 43.511 40.7188 43.0944 40.0312C42.6777 39.3229 42.4277 38.6562 42.3444 38.0312C42.2194 37.1771 42.1985 36.2812 42.2819 35.3438C42.3652 34.4062 42.6673 33.5417 43.1881 32.75C43.7298 31.9583 44.5423 31.3021 45.6256 30.7812C46.7298 30.2604 48.2194 30 50.0944 30ZM49.0631 42.125C49.2923 42.1667 49.6048 42.1146 50.0006 41.9688C50.3965 41.8021 50.7819 41.5417 51.1569 41.1875C51.5527 40.8333 51.8965 40.3854 52.1881 39.8438C52.5006 39.2812 52.6881 38.6042 52.7506 37.8125C52.8131 37.0417 52.8131 36.3333 52.7506 35.6875C52.709 35.0417 52.6152 34.4792 52.4694 34C52.3235 33.5 52.1569 33.0938 51.9694 32.7812C51.7819 32.4688 51.584 32.25 51.3756 32.125C51.0215 31.9375 50.5944 31.7917 50.0944 31.6875C49.5944 31.5625 49.1673 31.5833 48.8131 31.75C48.6465 31.8333 48.4381 32.0104 48.1881 32.2812C47.9381 32.5521 47.6881 32.8958 47.4381 33.3125C47.1881 33.7083 46.959 34.1667 46.7506 34.6875C46.5631 35.2083 46.4277 35.75 46.3444 36.3125C46.261 36.875 46.2402 37.4792 46.2819 38.125C46.3444 38.7708 46.4798 39.3854 46.6881 39.9688C46.8965 40.5312 47.1881 41.0208 47.5631 41.4375C47.959 41.8333 48.459 42.0625 49.0631 42.125ZM60.0394 40.5625C60.1852 39.875 60.2894 39.2708 60.3519 38.75C60.4352 38.2083 60.4977 37.7604 60.5394 37.4062C60.581 36.9896 60.6019 36.6354 60.6019 36.3438C60.581 35.9896 60.5602 35.5729 60.5394 35.0938C60.5394 34.5938 60.5185 34.1042 60.4769 33.625C60.456 33.125 60.4248 32.6875 60.3831 32.3125C60.3415 31.9167 60.2894 31.6354 60.2269 31.4688C60.1435 31.3021 60.029 31.125 59.8831 30.9375C59.5915 30.5833 59.1644 30.2396 58.6019 29.9062C59.081 29.8021 59.4873 29.7188 59.8206 29.6562C60.1748 29.5729 60.4665 29.5 60.6956 29.4375C60.9456 29.3542 61.1644 29.2812 61.3519 29.2188C61.5185 29.1562 61.7165 29.0938 61.9456 29.0312C62.1331 28.9896 62.3623 28.9375 62.6331 28.875C62.904 28.8125 63.2165 28.7396 63.5706 28.6562L63.4769 31.5C64.1435 30.7083 64.8206 30.1146 65.5081 29.7188C66.1956 29.3229 66.8415 29.0417 67.4456 28.875C68.1331 28.6667 68.8102 28.5625 69.4769 28.5625C70.3102 28.6042 71.081 28.7396 71.7894 28.9688C72.5185 29.1979 73.1435 29.4688 73.6644 29.7812C74.206 30.0729 74.6435 30.3854 74.9769 30.7188C75.3102 31.0521 75.5081 31.3438 75.5706 31.5938C75.8206 32.4062 75.8831 33.1562 75.7581 33.8438C75.6331 34.5104 75.4665 35.1667 75.2581 35.8125C75.0706 36.4375 74.904 37.0625 74.7581 37.6875C74.6331 38.3125 74.6852 38.9896 74.9144 39.7188C74.9977 39.9062 75.081 40.0938 75.1644 40.2812C75.2477 40.4479 75.3519 40.6146 75.4769 40.7812C75.6019 40.9479 75.7477 41.0833 75.9144 41.1875C75.6852 41.1667 75.456 41.1562 75.2269 41.1562C74.9977 41.1354 74.7894 41.1146 74.6019 41.0938C74.3727 41.0729 74.1644 41.0521 73.9769 41.0312C73.7685 41.0104 73.4873 41 73.1331 41C72.529 41 71.5915 41.0312 70.3206 41.0938C70.5081 40.6562 70.654 40.2917 70.7581 40C70.8831 39.6875 70.9873 39.4375 71.0706 39.25C71.154 39.0208 71.2165 38.8438 71.2581 38.7188C71.5081 38.1146 71.654 37.4271 71.6956 36.6562C71.7581 35.8854 71.706 35.1042 71.5394 34.3125C71.4769 34.0417 71.3727 33.7188 71.2269 33.3438C71.081 32.9688 70.8831 32.6042 70.6331 32.25C70.404 31.8958 70.1227 31.5938 69.7894 31.3438C69.4769 31.0938 69.1123 30.9479 68.6956 30.9062C68.279 30.8646 67.8102 30.9688 67.2894 31.2188C66.7894 31.4688 66.2477 31.9271 65.6644 32.5938C65.2269 33.1562 64.8831 33.8438 64.6331 34.6562C64.404 35.3438 64.2477 36.2083 64.1644 37.25C64.081 38.2708 64.206 39.4688 64.5394 40.8438C64.2477 40.8021 63.9769 40.7812 63.7269 40.7812C63.4769 40.7604 63.2685 40.7396 63.1019 40.7188C62.8935 40.6979 62.706 40.6771 62.5394 40.6562C62.3519 40.6562 62.1435 40.6458 61.9144 40.625C61.706 40.625 61.4456 40.625 61.1331 40.625C60.8206 40.6042 60.456 40.5833 60.0394 40.5625ZM95.6094 32.9062C95.3594 32.8646 95.0469 32.8333 94.6719 32.8125C94.3177 32.7917 93.974 32.7812 93.6406 32.7812C93.2656 32.7812 92.8698 32.7917 92.4531 32.8125C92.0156 32.8333 91.5781 32.8542 91.1406 32.875C90.7656 32.8958 90.3385 32.9271 89.8594 32.9688C89.401 32.9896 88.9531 33.0208 88.5156 33.0625C88.6823 32.9792 88.8281 32.8646 88.9531 32.7188C89.099 32.5729 89.224 32.4271 89.3281 32.2812C89.4323 32.1146 89.526 31.9375 89.6094 31.75C89.7135 31.4375 89.7031 31.0625 89.5781 30.625C89.4531 30.1667 89.224 29.75 88.8906 29.375C88.5781 29 88.1719 28.7083 87.6719 28.5C87.1927 28.2708 86.6615 28.2188 86.0781 28.3438C85.4531 28.4896 84.8906 28.7083 84.3906 29C83.9115 29.2917 83.5052 29.6979 83.1719 30.2188C82.8594 30.7188 82.6302 31.3438 82.4844 32.0938C82.3594 32.8229 82.3281 33.6979 82.3906 34.7188C82.474 35.9896 82.6823 37 83.0156 37.75C83.349 38.5 83.7552 39.0625 84.2344 39.4375C84.7135 39.8125 85.2344 40.0417 85.7969 40.125C86.3802 40.1875 86.9531 40.1875 87.5156 40.125C87.9115 40.0417 88.276 39.8646 88.6094 39.5938C88.8802 39.3646 89.1302 39.0312 89.3594 38.5938C89.5885 38.1562 89.6927 37.5521 89.6719 36.7812L93.4844 36.625C93.0469 37.8542 92.5156 38.8333 91.8906 39.5625C91.2656 40.2708 90.6615 40.8229 90.0781 41.2188C89.3906 41.6771 88.7031 41.9896 88.0156 42.1562C87.1615 42.3021 86.401 42.3646 85.7344 42.3438C85.0677 42.3021 84.4635 42.1979 83.9219 42.0312C83.3802 41.8646 82.8802 41.6562 82.4219 41.4062C81.9635 41.1562 81.526 40.8854 81.1094 40.5938C80.8385 40.4062 80.5365 40.0938 80.2031 39.6562C79.8698 39.2188 79.5573 38.6979 79.2656 38.0938C78.974 37.4688 78.7344 36.7812 78.5469 36.0312C78.3594 35.2812 78.2865 34.5104 78.3281 33.7188C78.3698 32.9062 78.5573 32.0938 78.8906 31.2812C79.224 30.4688 79.7552 29.6875 80.4844 28.9375C81.5885 27.8125 82.7656 27.0833 84.0156 26.75C85.2865 26.3958 86.4844 26.3021 87.6094 26.4688C88.7344 26.6146 89.7344 26.9375 90.6094 27.4375C91.4844 27.9375 92.099 28.4792 92.4531 29.0625C92.8073 29.6458 93.0677 30.0938 93.2344 30.4062C93.4219 30.6979 93.5573 30.9271 93.6406 31.0938C93.7448 31.2396 93.8281 31.3542 93.8906 31.4375C93.974 31.5 94.0885 31.5938 94.2344 31.7188C94.3385 31.8229 94.4635 31.9375 94.6094 32.0625C94.7344 32.1667 94.8802 32.2917 95.0469 32.4375C95.2135 32.5833 95.401 32.7396 95.6094 32.9062ZM103.586 38.9688C104.169 38.9688 104.711 38.9062 105.211 38.7812C105.627 38.6771 106.023 38.5104 106.398 38.2812C106.794 38.0312 107.054 37.6667 107.179 37.1875C107.596 37.2708 107.95 37.3438 108.242 37.4062C108.534 37.4479 108.784 37.4896 108.992 37.5312C109.221 37.5938 109.419 37.6354 109.586 37.6562C109.752 37.6979 109.95 37.7396 110.179 37.7812C110.388 37.8229 110.638 37.875 110.929 37.9375C111.242 37.9792 111.606 38.0417 112.023 38.125C111.711 38.0833 111.388 38.1146 111.054 38.2188C110.742 38.3229 110.44 38.4375 110.148 38.5625C109.815 38.7083 109.502 38.8854 109.211 39.0938C109.023 39.2188 108.804 39.4062 108.554 39.6562C108.325 39.9062 107.992 40.1458 107.554 40.375C107.117 40.6042 106.534 40.8021 105.804 40.9688C105.096 41.1146 104.179 41.1667 103.054 41.125C101.7 41.0833 100.565 40.8438 99.6481 40.4062C98.7315 39.9479 97.9919 39.3958 97.4294 38.75C96.8669 38.0833 96.4606 37.3646 96.2106 36.5938C95.9606 35.8229 95.8252 35.1042 95.8044 34.4375C95.7835 33.7708 95.9815 33.0729 96.3981 32.3438C96.8148 31.6146 97.3981 30.9479 98.1481 30.3438C98.919 29.7396 99.846 29.25 100.929 28.875C102.013 28.4792 103.2 28.2812 104.492 28.2812C105.242 28.2812 105.929 28.375 106.554 28.5625C107.2 28.7292 107.784 28.9583 108.304 29.25C108.846 29.5417 109.315 29.875 109.711 30.25C110.106 30.6042 110.44 30.9688 110.711 31.3438C110.981 31.7396 111.211 32.1562 111.398 32.5938C111.565 32.9688 111.7 33.3958 111.804 33.875C111.909 34.3542 111.94 34.8438 111.898 35.3438C110.315 35.3854 109.034 35.4167 108.054 35.4375C107.096 35.4583 106.346 35.4688 105.804 35.4688H104.398H103.336C102.961 35.4688 102.471 35.4792 101.867 35.5C101.263 35.5208 100.523 35.5521 99.6481 35.5938C99.7523 36.4271 100.013 37.0729 100.429 37.5312C100.867 37.9688 101.325 38.3021 101.804 38.5312C102.346 38.7812 102.94 38.9271 103.586 38.9688ZM100.773 33.3438C101.44 33.3854 101.992 33.4167 102.429 33.4375C102.888 33.4583 103.263 33.4792 103.554 33.5C103.867 33.5208 104.117 33.5312 104.304 33.5312H105.086C105.606 33.5312 106.575 33.5 107.992 33.4375C107.929 32.5208 107.731 31.8229 107.398 31.3438C107.086 30.8646 106.752 30.5104 106.398 30.2812C105.981 30.0312 105.523 29.8854 105.023 29.8438C103.669 29.8646 102.659 30.1458 101.992 30.6875C101.346 31.2292 100.94 32.1146 100.773 33.3438ZM112.531 29.4375C113.197 29.3333 113.739 29.25 114.156 29.1875C114.593 29.1042 114.947 29.0417 115.218 29C115.531 28.9375 115.77 28.8854 115.937 28.8438C116.104 28.8021 116.343 28.7396 116.656 28.6562C116.926 28.5729 117.281 28.4792 117.718 28.375C118.156 28.25 118.708 28.0833 119.374 27.875C119.208 28.0833 119.072 28.2708 118.968 28.4375C118.885 28.5833 118.801 28.7083 118.718 28.8125C118.635 28.9375 118.562 29.0521 118.499 29.1562C118.437 29.2604 118.374 29.4167 118.312 29.625C118.27 29.7917 118.218 30.0312 118.156 30.3438C118.093 30.6354 118.041 31.0208 117.999 31.5C119.124 30.7917 120.156 30.2604 121.093 29.9062C122.051 29.5521 122.885 29.3021 123.593 29.1562C124.426 28.9896 125.176 28.9271 125.843 28.9688C126.676 29.0312 127.447 29.2188 128.156 29.5312C128.885 29.8229 129.541 30.1771 130.124 30.5938C130.708 31.0104 131.218 31.4688 131.656 31.9688C132.093 32.4688 132.437 32.9688 132.687 33.4688C132.854 33.8021 132.958 34.2812 132.999 34.9062C133.062 35.5312 132.999 36.1979 132.812 36.9062C132.624 37.6146 132.291 38.3125 131.812 39C131.354 39.6667 130.697 40.1979 129.843 40.5938C128.364 41.2604 126.895 41.6354 125.437 41.7188C124.812 41.7604 124.166 41.7396 123.499 41.6562C122.854 41.5729 122.197 41.3958 121.531 41.125C120.885 40.8542 120.26 40.4688 119.656 39.9688C119.051 39.4479 118.499 38.7812 117.999 37.9688C117.833 39.0312 117.708 39.9583 117.624 40.75C117.562 41.5208 117.52 42.1667 117.499 42.6875C117.479 43.2917 117.479 43.8021 117.499 44.2188C117.541 44.6354 117.624 45.0833 117.749 45.5625C117.854 45.9792 117.999 46.4583 118.187 47C118.395 47.5625 118.656 48.1458 118.968 48.75C118.843 48.7083 118.666 48.6771 118.437 48.6562C118.229 48.6562 118.01 48.6771 117.781 48.7188C117.531 48.7604 117.249 48.8021 116.937 48.8438C116.645 48.9062 116.322 48.9792 115.968 49.0625C115.676 49.125 115.333 49.1979 114.937 49.2812C114.562 49.3854 114.176 49.5 113.781 49.625C114.01 49.3542 114.187 49.0417 114.312 48.6875C114.458 48.3542 114.572 48.0417 114.656 47.75C114.739 47.3958 114.812 47.0417 114.874 46.6875C114.895 46.375 114.926 45.7812 114.968 44.9062C115.031 44.0521 115.083 43.0625 115.124 41.9375C115.166 40.7917 115.197 39.5938 115.218 38.3438C115.26 37.0938 115.281 35.9375 115.281 34.875C115.301 33.7917 115.301 32.875 115.281 32.125C115.26 31.375 115.218 30.9375 115.156 30.8125C115.072 30.6667 114.916 30.5104 114.687 30.3438C114.499 30.1979 114.229 30.0521 113.874 29.9062C113.541 29.7604 113.093 29.6042 112.531 29.4375ZM119.968 35.125C119.822 35.6042 119.791 36.0729 119.874 36.5312C119.958 36.9896 120.166 37.4167 120.499 37.8125C120.854 38.2083 121.343 38.5625 121.968 38.875C122.614 39.1667 123.416 39.3854 124.374 39.5312C125.333 39.6771 126.062 39.6562 126.562 39.4688C127.062 39.2812 127.426 38.9896 127.656 38.5938C127.906 38.1771 128.072 37.6979 128.156 37.1562C128.239 36.5938 128.343 36.0104 128.468 35.4062C128.593 34.8229 128.572 34.2292 128.406 33.625C128.239 33 127.999 32.4375 127.687 31.9375C127.395 31.4375 127.062 31.0312 126.687 30.7188C126.333 30.3854 126.02 30.2188 125.749 30.2188C125.104 30.2188 124.468 30.3854 123.843 30.7188C123.218 31.0521 122.645 31.4688 122.124 31.9688C121.604 32.4688 121.145 33.0104 120.749 33.5938C120.374 34.1562 120.114 34.6667 119.968 35.125ZM134.226 24.3125C134.851 24.375 135.371 24.4271 135.788 24.4688C136.226 24.5104 136.58 24.5417 136.851 24.5625C137.163 24.5833 137.413 24.5938 137.601 24.5938C137.788 24.6146 138.038 24.6146 138.351 24.5938C138.621 24.5729 138.976 24.5521 139.413 24.5312C139.851 24.4896 140.403 24.4271 141.069 24.3438C140.924 24.5521 140.809 24.7396 140.726 24.9062C140.642 25.0521 140.569 25.1875 140.507 25.3125L140.319 25.6875C140.278 25.8125 140.236 25.9375 140.194 26.0625C140.153 26.1667 140.111 26.2917 140.069 26.4375C140.049 26.5833 140.028 26.7396 140.007 26.9062H144.819L144.382 29.4375L139.976 29.1875C139.871 30.25 139.799 31.0729 139.757 31.6562C139.715 32.2396 139.674 32.6667 139.632 32.9375L139.569 33.5C139.507 34.2917 139.444 35.1562 139.382 36.0938C139.319 37.0104 139.299 37.8646 139.319 38.6562C139.34 39.4479 139.413 40.1146 139.538 40.6562C139.663 41.1771 139.882 41.4375 140.194 41.4375C140.507 41.4375 140.799 41.3542 141.069 41.1875C141.34 41.0208 141.569 40.8229 141.757 40.5938C141.965 40.3646 142.121 40.1354 142.226 39.9062C142.33 39.6562 142.382 39.4688 142.382 39.3438C142.382 39.2188 142.351 39.0729 142.288 38.9062C142.184 38.5938 141.996 38.1979 141.726 37.7188C142.33 37.8646 142.861 38.0104 143.319 38.1562C143.549 38.2396 143.757 38.3229 143.944 38.4062C144.153 38.4896 144.392 38.5833 144.663 38.6875C144.892 38.7917 145.184 38.9167 145.538 39.0625C145.892 39.2083 146.309 39.3854 146.788 39.5938C146.33 39.6771 145.996 39.8125 145.788 40C145.663 40.0833 145.569 40.1771 145.507 40.2812C145.361 40.5104 145.194 40.8229 145.007 41.2188C144.819 41.5938 144.538 41.9688 144.163 42.3438C143.788 42.7188 143.278 43.0521 142.632 43.3438C142.007 43.6354 141.163 43.8021 140.101 43.8438C138.996 43.8854 138.153 43.6979 137.569 43.2812C137.007 42.8646 136.59 42.3854 136.319 41.8438C136.069 41.2812 135.924 40.7292 135.882 40.1875C135.84 39.6458 135.809 39.2812 135.788 39.0938C135.767 38.9062 135.767 38.4375 135.788 37.6875C135.809 36.9375 135.84 36.1146 135.882 35.2188C135.924 34.3021 135.965 33.4271 136.007 32.5938C136.049 31.7396 136.069 31.1146 136.069 30.7188C136.069 30.5104 136.08 30.2917 136.101 30.0625C136.101 29.875 136.101 29.6771 136.101 29.4688C136.121 29.2396 136.132 29.0208 136.132 28.8125L131.601 28.7812L131.413 27L135.976 27.125C135.934 26.8958 135.882 26.6875 135.819 26.5C135.778 26.2917 135.736 26.125 135.694 26C135.632 25.8542 135.569 25.7292 135.507 25.625C135.424 25.5208 135.33 25.4062 135.226 25.2812C135.121 25.1771 134.986 25.0417 134.819 24.875C134.653 24.7083 134.455 24.5208 134.226 24.3125Z"
+            fill="#1760EE"
+          />
+          <mask id="path-2-inside-1_1_4" fill="white">
+            <path
+              d="M0 23C0 11.9543 8.95431 3 20 3H147C158.046 3 167 11.9543 167 23V34C167 45.0457 158.046 54 147 54H20C8.9543 54 0 45.0457 0 34V23Z"
+            />
+          </mask>
+          <path
+            d="M0 23C0 11.9543 8.95431 3 20 3H147C158.046 3 167 11.9543 167 23V34C167 45.0457 158.046 54 147 54H20C8.9543 54 0 45.0457 0 34V23Z"
+            fill="#D9D9D9"
+            fill-opacity="0.17"
+          />
+          <path
+            d="M0 3H167H0ZM167 34C167 46.7025 156.703 57 144 57H23C10.2975 57 0 46.7025 0 34C0 43.3888 8.95431 51 20 51H147C158.046 51 167 43.3888 167 34ZM0 54V3V54ZM167 3V54V3Z"
+            fill="#CF2323"
+            mask="url(#path-2-inside-1_1_4)"
+          />
+        </svg> -->
+        <div class="btn">
+          `
+          <button id="logIn">Log In</button>
+          <button id="Register">Sign Up</button>
         </div>
-
       </div>
-      </section>
-      <section class="port">
-<h1>Car Catalogue</h1>
-        <div class="items">
-          <div style="background: url(/images/urus.jpg); background-size:cover; background-repeat:no-repeat">lamborghini urus venturas</div>
-          <div style="background: url(/images/escalade.jpg); background-size:cover; background-repeat:no-repeat">Cadillac Escalade 2023</div>
-          <div style="background: url(/images/range.jpg);background-size:cover; background-repeat:no-repeat ">Range Rover Sports</div>
-          <div style="background: url(/images/jeep.jpg);background-size:cover; background-repeat:no-repeat">2023 Jeep Compass</div>
-          <div style="background: url(/images/AMG.jpg);background-size:cover; background-repeat:no-repeat"> 2023 Mercedes-AMG G63 </div>
-          <div style="background: url(/images/lexus.jpg); background-size:cover; background-repeat:no-repeat">2023 Lexus GX</div>
-          <div style="background: url(/images/cayenne.jpg);background-size:cover; background-repeat:no-repeat">Porsche Cayenne</div>
-          <div style="background: url(/images/offroad.jpeg); background-size:cover; background-repeat:no-repeat">Range Rover Evoque</div>
-        </div>
-      </section>
-      <section class="like" id="like">
-        <div class="all">
-          <h1>Why People like us</h1>
-          <p id="here">
-            Here are the reasons why we are the best in this Car Rental Field:
-          </p>
-          <div class="top">
-            <div class="best">
-              <h4>Best Price Guarantee</h4>
-              <p>
-                Choosing Concept would be a smart choice due to our best price
-                guarantee, which ensures you receive the best possible rates on
-                our rental vehicles.
-              </p>
-            </div>
-            <div class="fees">
-              <h4>No Cancellation Fees</h4>
-              <p>
-                no cancellation fees policy gives you the flexibility to make
-                changes to your rental bookings without incurring additional
-                charges, making it a great choice for anyone who values
-                convenience and peace of mind.
-              </p>
-            </div>
-            <div class="quality">
-              <h4>Best Quality Cars</h4>
-              <p>
-                Concept's commitment to providing you with the best quality cars
-                ensures that you as renters have access to reliable and
-                well-maintained vehicles, making it a top choice for anyone who
-                values safety and comfort on the road.
-              </p>
-            </div>
-            <div class="any">
-              <h4>Reservation Anytime</h4>
-              <p>
-                Concept's 24/7 reservation system allows as a customer to book
-                your rentals anytime, anywhere, making it a convenient option for
-                busy travelers who need flexibility when it comes to making their
-                rental arrangements.
-              </p>
-            </div>
-          </div>
-          <div class="bottom">
-            <div class="miles">
-              <h4>Personal Driver</h4>
-              <p>
-                Concept's personal driver service provides you with a stress-free
-                and luxurious travel experience, making it a great choice for
-                those who want to sit back, relax, and enjoy the ride.
-              </p>
-            </div>
-            <div class="fees">
-              <h4>Unlimited Miles</h4>
-              <p>
-                Concept's unlimited miles policy allows you to drive as far as you
-                need without worrying about incurring additional fees, making it
-                an excellent option for anyone planning a long road trip or
-                exploring a new destination.
-              </p>
-            </div>
-            <div class="city">
-              <h4>City to City</h4>
-              <p>
-                Concept's city to city service provides you with the convenience
-                of dropping off your rental car at a different location from where
-                you picked it up, making it an ideal choice for anyone who needs
-                to travel between cities without worrying about transportation
-                logistics.
-              </p>
-            </div>
-            <div class="customer">
-              <h4>24/7 Customer Support</h4>
-              <p>
-                Concept's 24/7 customer support ensures that renters have access
-                to assistance at any time, making it a reliable choice for anyone
-                who values excellent customer service and support.
-              </p>
-            </div>
-          </div>
-        </div>
-        <h1>Cars by Type</h1>
-        <h5 id="here">Here are some of the car types we offer to our clients:</h5>
-      </section>
-      <section class="footer" id="footer">
-        <div class="all1">
-          <div class="about">
-            <h3>About Us</h3>
-            <h2>Concept</h2>
-            <p>Concept is a car hire company that provides a wide range of vehicles for short-term and long-term rentals. We offer
-            high-quality, reliable and well-maintained cars, including economy, luxury, SUVs, and vans.</p>
-            <div class="font">
-              <i class="fa-brands fa-facebook" aria-hidden="true"></i>
-              <i class="fa fa-twitter" aria-hidden="true"></i>
-              <i class="fa fa-instagram" aria-hidden="true"></i>
-              <i class="fa fa-linkedin" aria-hidden="true"></i>
-            </div>
-          </div>
-          <div class="link">
-            <h3>Quick Links</h3>
-            <a href="">About Us</a>
-            <a href="">Contact Us</a>
-            <a href="cars.html" id="cars">Cars</a>
-          </div>
-          <div class="us">
-            <h3 style="color:#f5f5f5">Contact Us</h3>
-            <p>Phone Number: <span>+254746886189</span></p>
-            <p>Email Address: <a href="">concept@gmail.com</a></p>
-          </div>
-        </div>
-        <div class="copyright">
-          <p >Copyright <i class="fa fa-copyright" aria-hidden="true"></i>Concept <span id="year"></span>. All rights reserved.</p>
-          <div class="accept">
-            <p>We accept</p>
-            <div class="pay">
-              <i class="fa fa-cc-paypal" aria-hidden="true"></i>
-              <i class="fa fa-cc-visa" aria-hidden="true"></i>
-              <i class="fa fa-cc-mastercard" aria-hidden="true"></i>
-            </div>
-          </div>
-  
-      </div>
-        
     </section>
-    
-      <!-- <script src="javaScript/main.js"></script> -->
+    <section class="port">
+      <h1>Car Catalogue</h1>
+      <div class="items">
+        <div
+          style="
+            background: url(/images/urus.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+          "
+        >
+          lamborghini urus venturas
+        </div>
+        <div
+          style="
+            background: url(/images/escalade.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+          "
+        >
+          Cadillac Escalade 2023
+        </div>
+        <div
+          style="
+            background: url(/images/range.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+          "
+        >
+          Range Rover Sports
+        </div>
+        <div
+          style="
+            background: url(/images/jeep.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+          "
+        >
+          2023 Jeep Compass
+        </div>
+        <div
+          style="
+            background: url(/images/AMG.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+          "
+        >
+          2023 Mercedes-AMG G63
+        </div>
+        <div
+          style="
+            background: url(/images/lexus.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+          "
+        >
+          2023 Lexus GX
+        </div>
+        <div
+          style="
+            background: url(/images/cayenne.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+          "
+        >
+          Porsche Cayenne
+        </div>
+        <div
+          style="
+            background: url(/images/offroad.jpeg);
+            background-size: cover;
+            background-repeat: no-repeat;
+          "
+        >
+          Range Rover Evoque
+        </div>
+      </div>
+    </section>
+    <section class="like" id="like">
+      <div class="all">
+        <h1>Why People like us</h1>
+        <p id="here">
+          Here are the reasons why we are the best in this Car Rental Field:
+        </p>
+        <div class="top">
+          <div class="best">
+            <h4>Best Price Guarantee</h4>
+            <p>
+              Choosing Concept would be a smart choice due to our best price
+              guarantee, which ensures you receive the best possible rates on
+              our rental vehicles.
+            </p>
+          </div>
+          <div class="fees">
+            <h4>No Cancellation Fees</h4>
+            <p>
+              no cancellation fees policy gives you the flexibility to make
+              changes to your rental bookings without incurring additional
+              charges, making it a great choice for anyone who values
+              convenience and peace of mind.
+            </p>
+          </div>
+          <div class="quality">
+            <h4>Best Quality Cars</h4>
+            <p>
+              Concept's commitment to providing you with the best quality cars
+              ensures that you as renters have access to reliable and
+              well-maintained vehicles, making it a top choice for anyone who
+              values safety and comfort on the road.
+            </p>
+          </div>
+          <div class="any">
+            <h4>Reservation Anytime</h4>
+            <p>
+              Concept's 24/7 reservation system allows as a customer to book
+              your rentals anytime, anywhere, making it a convenient option for
+              busy travelers who need flexibility when it comes to making their
+              rental arrangements.
+            </p>
+          </div>
+        </div>
+        <div class="bottom">
+          <div class="miles">
+            <h4>Personal Driver</h4>
+            <p>
+              Concept's personal driver service provides you with a stress-free
+              and luxurious travel experience, making it a great choice for
+              those who want to sit back, relax, and enjoy the ride.
+            </p>
+          </div>
+          <div class="fees">
+            <h4>Unlimited Miles</h4>
+            <p>
+              Concept's unlimited miles policy allows you to drive as far as you
+              need without worrying about incurring additional fees, making it
+              an excellent option for anyone planning a long road trip or
+              exploring a new destination.
+            </p>
+          </div>
+          <div class="city">
+            <h4>City to City</h4>
+            <p>
+              Concept's city to city service provides you with the convenience
+              of dropping off your rental car at a different location from where
+              you picked it up, making it an ideal choice for anyone who needs
+              to travel between cities without worrying about transportation
+              logistics.
+            </p>
+          </div>
+          <div class="customer">
+            <h4>24/7 Customer Support</h4>
+            <p>
+              Concept's 24/7 customer support ensures that renters have access
+              to assistance at any time, making it a reliable choice for anyone
+              who values excellent customer service and support.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="footer" id="footer">
+      <div class="all1">
+        <div class="about">
+          <h3>About Us</h3>
+          <h2>Concept</h2>
+          <p>
+            Concept is a car hire company that provides a wide range of vehicles
+            for short-term and long-term rentals. We offer high-quality,
+            reliable and well-maintained cars, including economy, luxury, SUVs,
+            and vans.
+          </p>
+          <div class="font">
+            <i class="fa-brands fa-facebook" aria-hidden="true"></i>
+            <i class="fa fa-twitter" aria-hidden="true"></i>
+            <i class="fa fa-instagram" aria-hidden="true"></i>
+            <i class="fa fa-linkedin" aria-hidden="true"></i>
+          </div>
+        </div>
+        <div class="link">
+          <h3>Quick Links</h3>
+          <a href="">About Us</a>
+          <a href="">Contact Us</a>
+          <a href="cars.html" id="cars">Cars</a>
+        </div>
+        <div class="us">
+          <h3 style="color: #f5f5f5">Contact Us</h3>
+          <p>Phone Number: <span>+254746886189</span></p>
+          <p>Email Address: <a href="">concept@gmail.com</a></p>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>
+          Copyright <i class="fa fa-copyright" aria-hidden="true"></i>Concept
+          <span id="year"></span>. All rights reserved.
+        </p>
+        <div class="accept">
+          <p>We accept</p>
+          <div class="pay">
+            <i class="fa fa-cc-paypal" aria-hidden="true"></i>
+            <i class="fa fa-cc-visa" aria-hidden="true"></i>
+            <i class="fa fa-cc-mastercard" aria-hidden="true"></i>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- <script src="javaScript/main.js"></script> -->
     <script>
       document.getElementById("logIn").onclick = function () {
         window.location.href = "/login.html";
       };
-document.getElementById("Register").onclick = function () {
-  window.location.href = "/register.html";
-}
+      document.getElementById("Register").onclick = function () {
+        window.location.href = "/register.html";
+      };
       function changeBackground() {
         var myDiv = document.getElementById("myDiv");
         if (window.scrollY > 0) {
           myDiv.classList.add("change-background");
-        } 
-         else {
+        } else {
           myDiv.classList.remove("change-background");
-          
         }
       }
 
-const year = new Date().getFullYear()
-document.getElementById("year").innerText = year
-      
+      const year = new Date().getFullYear();
+      document.getElementById("year").innerText = year;
     </script>
   </body>
 </html>
