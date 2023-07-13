@@ -543,6 +543,9 @@ select {
     display: inline-flex;
     align-items: center;
     cursor: pointer;
+    color: #d3d7d3;
+  }
+  .navbar1.change-background label{
     color: #fc6704;
   }
 
