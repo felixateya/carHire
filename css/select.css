@@ -138,7 +138,7 @@
     align-items: center;
     justify-content: space-between;
     height: 8vh;
-    background-color: #7a7a7a;
+    background-color: #fc6704;
   }
 
   /* .logo {
@@ -163,11 +163,11 @@
     display: inline-flex;
     align-items: center;
     cursor: pointer;
-    color: #fff;
+    color: #d3d7d3;
     font-weight: 600;
   }
 
-  #toggler:checked ~ .menu {
+  #toggler:hover ~ .menu {
     max-height: max-content;
   }
 
