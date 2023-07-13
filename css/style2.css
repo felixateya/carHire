@@ -446,7 +446,9 @@ select {
     background-size: cover;
     background-repeat: no-repeat; */
   }
-
+.navbar1{
+  height: 5%;
+}
   .opacity {
     background-color: transparent;
   }
@@ -511,6 +513,9 @@ select {
     background-repeat: no-repeat;
     background-position:center; */
   }
+  .navbar1{
+    height: 65px;
+  }
   .mine h1 {
     margin-top: 35px;
   }
@@ -538,7 +543,7 @@ select {
     display: inline-flex;
     align-items: center;
     cursor: pointer;
-    color: #73b0cd;
+    color: #fc6704;
   }
 
   #toggler:hover ~ .menu {
