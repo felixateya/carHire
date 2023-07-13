@@ -215,14 +215,14 @@ select {
 ::placeholder {
   color: #f5f7ff;
 }
-.form input[type="date"],
+/* .form input[type="date"],
 [type="time"] {
   color: #d3d7d3;
   height: 100px;
   font-size: 16px;
   font-weight: 700;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-}
+} */
 
 .form button {
   margin-top: 10px;
@@ -568,7 +568,7 @@ select {
   .like h4 {
     font-size: 16px;
     text-align: center;
-    color: #73b0cd;
+    color: #fc6704;
   }
   #here {
     text-align: center;
@@ -590,10 +590,12 @@ select {
     /* display: none; */
     text-align: justify;
     margin-left: 30px;
+    width: 80%;
   }
   .bottom p {
     /* display: none; */
     text-align: justify;
+    width: 80%;
     margin-left: 30px;
   }
 
