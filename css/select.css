@@ -166,7 +166,9 @@
     color: #d3d7d3;
     font-weight: 600;
   }
-
+.navbar1.change-background label{
+  color: #fc6704;
+}
   #toggler:hover ~ .menu {
     max-height: max-content;
   }
