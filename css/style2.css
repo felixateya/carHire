@@ -5,24 +5,40 @@
 }
 
 body {
-  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
 
-html{
+html {
   scroll-behavior: smooth;
 }
 
 .home {
   width: 100%;
   display: flex;
-  background: #3c3937;
+  position: relative;
+  /* background: #3c3937;
+  background: url(/images/urus.jpg);
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed; */
   flex-direction: column;
   position: relative;
   animation: 10s ease-in-out;
-  height: 100vh;
+  height: 110vh;
   border-bottom: 1px solid #000;
 }
-
+.home video{
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  position: fixed;
+  object-fit: fill;
+  overflow: hidden;
+  /* background-position: center; */
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
 .logo {
   font-family: "Secular One", sans-serif;
 }
@@ -44,12 +60,13 @@ html{
   background-color: #fc5704;
   transition: 1.4s ease-in;
   transition: 0.3s ease-out;
-  }
+}
 .navbar1.change-background {
   background-color: #d3d7d3;
   border-bottom: 2px solid rgb(13, 14, 19);
 }
-.navbar1.change-background a, .navbar1.change-background button{
+.navbar1.change-background a,
+.navbar1.change-background button {
   color: #fc6704;
   font-weight: 700;
 }
@@ -58,6 +75,8 @@ html{
   text-decoration: none;
   color: #d3d7d3;
   font-weight: 700;
+  font-size: 20px;
+  margin-top: 1px;
 }
 
 .logo {
@@ -67,15 +86,16 @@ html{
   margin-top: 20px;
 }
 .menu button {
+  background-color: #3c3937;
   background-color: transparent;
   /* margin-top: 20px; */
   border-color: transparent;
   /* border-radius: 5px; */
-  /* font-size: 22px; */
+  font-size: 20px;
   color: #d3d7d3;
   font-weight: 700;
   cursor: pointer;
-  /* padding: -2px; */
+  padding: 0 2px;
 }
 
 .list {
@@ -101,7 +121,8 @@ html{
 .opacity {
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.562);
+  position: relative;
+  background-color: rgb(0, 0, 0);
 }
 .mine h1 {
   margin-top: 200px;
@@ -139,10 +160,10 @@ html{
   color: #fc6704;
   font-weight: 600;
   transition: 0.9s;
-  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
 
-.mine button:hover{
+.mine button:hover {
   background-color: #fc6704;
   color: #d3d7d3;
 }
@@ -151,14 +172,13 @@ html{
   background: #d3d7d3;
   display: flex;
   flex-direction: column;
-  height: 109vh; 
+  height: 109vh;
+  position: relative;
 }
 
-
-
-.opacity {
+/* .opacity {
   background-color: transparent;
-}
+} */
 
 .search h1 {
   font-size: 36px;
@@ -168,7 +188,7 @@ html{
   font-weight: 700;
   /* text-shadow: 5px 5px 2px grey; */
 }
-.cars{
+.cars {
   padding: 12px;
   font-size: 36px;
   text-align: center;
@@ -198,14 +218,11 @@ select {
   padding: 10px 0;
   border-radius: 5px;
   background-color: #fc6704;
-  border:none;
+  border: none;
   color: #f5f7ff;
   outline: none;
   padding-left: 10px;
 }
-
-
-
 
 .form label {
   color: #3c3937;
@@ -238,44 +255,38 @@ select {
   margin-bottom: 5px;
 }
 
-.exp{
-  width:100%;
-  padding:  30px 0;
+.exp {
+  width: 100%;
+  padding: 30px 0;
   height: max-content;
   display: flex;
+  position: relative;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   background-color: #fc6704;
   /* margin-top: 12px; */
 }
-#carouselExampleCaptions{
+#carouselExampleCaptions {
   width: 60%;
   height: 90%;
 }
 
-.carousel-inner{
+.carousel-inner {
   border-radius: 20px;
-
 }
-
-
-
-
-
-
-
-
 
 .like {
   width: 100%;
   background-color: #3c3937;
   flex-wrap: wrap;
+  position: relative;
   padding-left: 20px;
   padding-bottom: 2px;
 }
 
-.like h1, .exp2 h1 {
+.like h1,
+.exp2 h1 {
   color: #d3d7d3;
   text-align: center;
   font-weight: 600;
@@ -295,21 +306,22 @@ select {
 .like h4 {
   color: #fc6704;
   padding-top: 10px;
-  font-weight:600;
+  font-weight: 600;
 }
-.exp2{
-  width:100%;
-  padding:  30px 0;
+.exp2 {
+  width: 100%;
+  padding: 30px 0;
   height: max-content;
   display: flex;
+  position: relative;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   background-color: #d3d7d3;
 }
-.exp2 h1, .exp2 h5{
+.exp2 h1,
+.exp2 h5 {
   color: #fc6704;
-
 }
 .top {
   width: 100%;
@@ -353,6 +365,7 @@ select {
 
 .footer {
   width: 100%;
+  position: relative;
   background-color: #fc6704;
   display: flex;
   flex-direction: column;
@@ -375,7 +388,8 @@ select {
   width: 30%;
 }
 
-.about h3, .about h2 {
+.about h3,
+.about h2 {
   color: #3c3937;
   font-weight: 600;
 }
@@ -388,7 +402,6 @@ select {
   padding-left: 10px;
   font-size: 24px;
   color: #d3d7d3;
-
 }
 
 .link {
@@ -398,7 +411,7 @@ select {
 }
 .link h3 {
   color: #3c3937;
-  font-weight: 600;
+  font-weight: 800;
 }
 
 .link a {
@@ -412,12 +425,15 @@ select {
   flex-direction: column;
   color: #3c3937;
 }
+.us h3 {
+  font-weight: 600;
+}
 .us a {
   text-decoration: none;
   color: #d3d7d3;
 }
-.us span{
- color: #d3d7d3;
+.us span {
+  color: #d3d7d3;
 }
 .copyright {
   display: flex;
@@ -446,17 +462,16 @@ select {
     background-size: cover;
     background-repeat: no-repeat; */
   }
-.navbar1{
-  height: 5%;
-}
-  .opacity {
-    background-color: transparent;
+  .navbar1 {
+    height: 65px;
   }
+  /* .opacity {
+    background-color: transparent;
+  } */
 
-  
-.cars{
-  margin:0;
-}
+  .cars {
+    margin: 0;
+  }
   .mine h1 {
     font-size: 35px;
     width: 95%;
@@ -479,14 +494,14 @@ select {
   select {
     width: 270px;
   }
-.exp {
-  padding: 0;
-}
-  #carouselExampleCaptions{
+  .exp {
+    padding: 0;
+  }
+  #carouselExampleCaptions {
     width: 100%;
     height: 100%;
   }
-  .carousel-inner{
+  .carousel-inner {
     border-radius: 0px;
   }
   .copyright {
@@ -508,12 +523,14 @@ select {
   .home {
     width: 100%;
     height: 100%;
+    object-fit:contain;
+    /* background: #3c3937; */
     /* background: url(/images/rez.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position:center; */
   }
-  .navbar1{
+  .navbar1 {
     height: 65px;
   }
   .mine h1 {
@@ -529,7 +546,6 @@ select {
     /* flex:  1 1 20px; */
   }
 
-  
   .list {
     display: flex;
     flex-direction: column;
@@ -545,7 +561,7 @@ select {
     cursor: pointer;
     color: #d3d7d3;
   }
-  .navbar1.change-background label{
+  .navbar1.change-background label {
     color: #fc6704;
   }
 

@@ -14,7 +14,7 @@ body{
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  padding: 5px;
+  /* padding: 5px; */
   position: fixed;
   z-index: 100;
   background-color: #fc5704;
@@ -30,13 +30,15 @@ body{
   text-decoration: none;
   color: #d3d7d3;
   font-weight: 700;
+  font-size:20px;
+  margin-top:1px;
 }
 .navbar1.change-background a, .navbar1.change-background button{
   color: #fc6704;
   font-weight: 700;
 }
 .logo {
-  /* margin-right: 200px; */
+  margin-right: 50px;
   font-family: 'Secular One', sans-serif;
 }
 
@@ -47,15 +49,22 @@ body{
 
 .menu button {
   background-color: transparent;
+  background-color: #3c3937;
   /* margin-top: 20px; */
   border: none;
   /* border-radius: 5px; */
-  /* font-size: 22px; */
-  color: #f5f5f5;
-  font-weight: 900;
+  font-size: 20px;
+  color: #d3d7d3;
+  font-weight: 700;
   cursor: pointer;
+  border-radius:7px;
+  padding:4px 6px;
 }
+.menu button:hover{
+  color:#3c3937;
+  background-color:#d3d7d3;
 
+}
 .list  {
   list-style: none;
   display: flex;
