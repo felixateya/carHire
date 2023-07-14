@@ -531,7 +531,7 @@ select {
     background-position:center; */
   }
   .home video{
-    aspect-ratio: 4/3;
+    display: none;
   }
   .navbar1 {
     height: 65px;
