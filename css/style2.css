@@ -20,10 +20,10 @@ html {
   position: relative;
   flex-direction: column;
   position: relative;
-  animation: 10s ease-in-out;
+  transition: 10s ease-in-out;
   height: 110vh;
   border-bottom: 1px solid #000;
-  animation: changebg 50s infinite ease-in-out;
+  animation: changebg 50s linear alternate infinite ;
 }
 
 @keyframes changebg{
