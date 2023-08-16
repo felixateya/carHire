@@ -269,7 +269,7 @@ textarea {
     height: 115vh;
     background: rgb(37 39 52);
   }
-  .fire {
+  .fireon {
     width: 100%;
     height: max-content;
     display: flex;
@@ -286,7 +286,7 @@ textarea {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    /* background-color: rgb(37 39 52); */
+    background-color: rgb(37 39 52);
     padding-bottom: 20px;
   }
   .left input {

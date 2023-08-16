@@ -1,6 +1,19 @@
+
+document.addEventListener("DOMContentLoaded", function() {
+  var passwordInput = document.getElementById("password");
+
+  passwordInput.addEventListener("keypress", function(event) {
+    if (event.key === "Enter") {
+      document.getElementById("login").click();
+    }
+  });
+});
 document.getElementById("login").onclick = function () {
   let email = document.getElementById("email").value;
   let password = document.getElementById("password").value;
+
+
+
 
   firebase
     .auth()
