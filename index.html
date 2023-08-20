@@ -57,20 +57,6 @@
     <section class="port">
       <h1>Car Catalogue</h1>
       
-<div id="carouselme">
-  <div id="spinner">
-    <img src="images/AMG.jpg" alt>
-    <img src="images/escalade.jpg" alt>
-    <img src="images/cayenne.jpg" alt>
-    <img src="images/evoque.jpg" alt>
-    <img src="images/jeep.jpg" alt>
-    <img src="images/range.jpg" alt>
-    <img src="images/porsche.webp" alt>
-    <img src="images/urus.jpg" alt>
-  </div>
-</div>
-<span style="float:left" class="ss-icon" onclick="galleryspin('-')">&lt;</span>
-<span style="float:right" class="ss-icon" onclick="galleryspin('')">&gt;</span>
     </section>
     <section class="like" id="like">
       <div class="all">
@@ -222,12 +208,7 @@
       const year = new Date().getFullYear();
       document.getElementById("year").innerText = year;
 
-      var angle = 0;
-      function galleryspin(sign) { 
-      spinner = document.querySelector("#spinner");
-      if (!sign) { angle = angle + 45; } else { angle = angle - 45; }
-      spinner.setAttribute("style","-webkit-transform: rotateY("+ angle +"deg); -moz-transform: rotateY("+ angle +"deg); transform: rotateY("+ angle +"deg);");
-      }
+      
     </script>
   </body>
 </html>
