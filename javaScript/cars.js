@@ -38,7 +38,7 @@ firebase.auth().onAuthStateChanged((user) => {
 
 
 var Jeep = {
-  car: "/images/jeep.jpg",
+  car: "images/jeep.jpg",
   name: "2023 Jeep Compass",
   price: 22299,
   itemId: "B001"

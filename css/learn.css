@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Fira+Sans:400,500,600,700,800');
+@import url("https://fonts.googleapis.com/css?family=Fira+Sans:400,500,600,700,800");
 
 * {
   margin: 0;
@@ -31,11 +31,11 @@
   font-weight: 600;
 }
 
-.btn  {
+.btn {
   position: relative;
 }
 
-.btn button{
+.btn button {
   width: 150px;
   border-radius: 20px;
   padding: 12px;
@@ -46,7 +46,7 @@
   transition: 0.4s ease-in;
 }
 
-#logIn{
+#logIn {
   background-color: #154b61;
   color: #fff;
   position: absolute;
@@ -63,14 +63,14 @@
   /* margin-left: -120px; */
 }
 
-#logIn:hover + #Register{
+#logIn:hover + #Register {
   background-color: #092733;
   color: #fff;
   /* position: relative; */
   z-index: 1;
 }
 
-#Register{
+#Register {
   background-color: #09273357;
   color: black;
   position: relative;
@@ -84,20 +84,22 @@
   z-index: 2;
 }
 
-#Register:hover + #logIn{
+#Register:hover ~ #logIn {
   background-color: #09273357;
   color: black;
 }
 
 .navbar1.change-background {
-  background-color: chocolate;
-  
+  background-color: transparent;
+  backdrop-filter: blur(12px);
   border-bottom: 3px solid rgb(13, 14, 19);
 }
 
+
+
 .port {
   width: 100%;
-  height:100vh;
+  height: 105vh;
   background-color: #092733;
   display: flex;
   flex-direction: column;
@@ -106,21 +108,39 @@
   /* position: relative; */
 }
 
-.port h1{
+.port h1 {
   margin-top: 100px;
   margin-bottom: 20px;
   text-align: center;
   color: chocolate;
 }
 
+.items {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
 
+.item {
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  flex: 1;
+  width: 12%;
+  height: 100%;
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+}
 
+.item:hover {
+  flex: 8;
+}
 
-.footer{
+.footer {
   border-top: 1px dashed #999;
   padding-top: 20px;
 }
-.like{
+.like {
   padding-top: 30px;
 }
 .exp {
@@ -130,23 +150,15 @@
   height: max-content;
   flex-wrap: wrap;
 }
-.exp div{
+.exp div {
   width: 48%;
   height: max-content;
   padding: 20px;
   color: wheat;
 }
 
-
-
-
 /* swiper slide */
 /* swiper slide */
-
-
-
-
-
 
 @media (max-width: 1024px) {
   .homing {
@@ -158,9 +170,14 @@
     height: max-content;
     padding-bottom: 20px;
   }
-  .items{
+  .items {
     display: flex;
     flex-direction: column;
+  }
+
+  .item {
+    background-position: center;
+    background-size: cover;
   }
   .port h1 {
     margin-top: 80px;
